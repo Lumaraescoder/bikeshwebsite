@@ -300,7 +300,7 @@ function Home() {
 
       {/* Seções de categorias, destinos e carrossel duplicado removidas. Apenas Featured trips e Recent Gallery permanecem. */}
 
-      <div className="gallery-area">
+      <div className="gallery-area" id="gallery">
         <div className="container th-container">
           <div className="title-area text-center">
             <span className="sub-title">Make Your Tour More Pleasure</span>

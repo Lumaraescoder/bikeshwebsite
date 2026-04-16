@@ -1,44 +1,49 @@
 import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 import { useParams } from "react-router-dom";
+import { destinations } from "../data/destinations.js";
 
 function Destinationdetails() {
   const { slug } = useParams();
+  const [destination, setDestination] = useState(null);
 
-  // Static content for Alfama tour as example - descriptions in English
-  const title = "Alfama Old Town Tour";
-  const heroImg = "assets/img/photosoftheclientes/clientspanteao%20alfama.jpeg";
-  const shortDesc =
-    "Explore the heart of Lisbon's oldest district, winding alleys, Fado music, and the stunning Panteão Nacional. Perfect for history lovers and first-time visitors.";
-  const longDesc =
-    "Discover Alfama, Lisbon's oldest neighborhood, with its narrow cobblestone streets, traditional Fado houses, and breathtaking viewpoints. Visit the National Pantheon, Miradouro da Senhora do Monte, and hidden azulejo-covered squares. Hear live Fado music stories and taste genuine Portuguese petiscos. Our electric tuk-tuk navigates the steep hills perfectly, offering unique access to spots larger vehicles can't reach.";
-  const duration = "1h";
-  const price = "€35";
-  const rating = 4.9;
-  const reviews = 128;
-  const location = "Lisbon, Portugal";
-  const visa = "Schengen Area - visa policy applies";
-  const language = "Portuguese, English";
-  const currency = "Euro (€)";
-  const bestTime = "Year-round (avoid August heat)";
-  const highlights = [
-    "National Pantheon visit",
-    "Miradouro Senhora do Monte",
-    "Traditional Fado neighborhood",
-    "Historic azulejo tiles",
-    "Narrow street tuk-tuk access",
-  ];
-  const gallery = [
-    "assets/img/photosoftheclientes/clientspanteao alfama.jpeg",
-    "assets/img/photosoftheclientes/capa.jpeg",
-    "assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg",
-    "assets/img/photosoftheclientes/clients.jpeg",
-  ];
+  useEffect(() => {
+    const found = destinations.find((d) => d.slug === slug);
+    setDestination(found || destinations[0]); // fallback to first
+  }, [slug]);
+
+  if (!destination) {
+    return <div>Loading...</div>;
+  }
+
+  const {
+    title,
+    heroImg,
+    shortDesc,
+    longDesc,
+    duration,
+    price,
+    rating,
+    reviews,
+    location,
+    visa,
+    language,
+    currency,
+    bestTime,
+    highlights,
+    gallery,
+  } = destination;
 
   return (
     <div>
       <div
         className="breadcumb-wrapper"
-        style={{ backgroundImage: "url('/assets/img/bg/breadcumb-bg.jpg')" }}
+        style={{ backgroundImage: `url('${destination.backgroundImage}')` }}
       >
         <div className="container">
           <div className="breadcumb-content">
@@ -58,7 +63,7 @@ function Destinationdetails() {
             <div className="col-xxl-8 col-lg-7">
               <div className="page-single">
                 <div className="service-img">
-                  <img src={heroImg} alt={title} />
+                  <img src={"/" + heroImg} alt={title} />
                 </div>
                 <div className="page-content d-block">
                   <div className="page-meta mt-50 mb-45">
@@ -108,23 +113,35 @@ function Destinationdetails() {
                 </div>
                 <div className="destination-gallery-wrapper">
                   <h3 className="page-title mt-30 mb-30">From our gallery</h3>
-                  <div className="row gy-4 gallery-row filter-active">
+                  <Swiper
+                    modules={[Navigation, Pagination, EffectFade]}
+                    className="destination-gallery-carousel"
+                    spaceBetween={10}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    effect="fade"
+                    loop={true}
+                  >
                     {gallery.map((img, i) => (
-                      <div key={i} className="col-xxl-auto filter-item">
-                        <div className="gallery-box style3">
-                          <div className="gallery-img global-img">
-                            <img src={"/" + img} alt="gallery image" />
-                            <a
-                              href={"/" + img}
-                              className="icon-btn popup-image"
-                            >
-                              <i className="fal fa-magnifying-glass-plus"></i>
-                            </a>
-                          </div>
+                      <SwiperSlide key={i}>
+                        <div className="gallery-slide">
+                          <img
+                            src={"/" + img}
+                            alt="gallery image"
+                            className="img-fluid w-100"
+                            style={{ height: "400px", objectFit: "cover" }}
+                          />
+                          <a
+                            href={"/" + img}
+                            className="icon-btn popup-image position-absolute top-50 start-50 translate-middle"
+                          >
+                            <i className="fal fa-magnifying-glass-plus"></i>
+                          </a>
                         </div>
-                      </div>
+                      </SwiperSlide>
                     ))}
-                  </div>
+                  </Swiper>
                 </div>
                 <section id="book" className="space-top">
                   <div className="container">

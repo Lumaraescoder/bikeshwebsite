@@ -5,34 +5,12 @@ function Footer() {
     <>
       <footer
         className="footer-wrapper bg-title footer-layout2"
-        style={{ marginTop: "100px" }}
+        style={{ marginTop: "100px", height: "800px" }}
       >
         <div className="widget-area">
           <div className="container">
             <div className="newsletter-area">
-              <div className="newsletter-top">
-                <div className="row gy-4 align-items-center">
-                  <div className="col-lg-5">
-                    <h2 className="newsletter-title text-white text-capitalize mb-0">
-                      get updated the latest newsletter
-                    </h2>
-                  </div>
-                  <div className="col-lg-7">
-                    <form className="newsletter-form style2">
-                      <input
-                        className="form-control"
-                        type="email"
-                        placeholder="Enter Email"
-                        required=""
-                      />
-                      <button type="submit" className="th-btn style1">
-                        Subscribe Now
-                        <img src="assets/img/icon/plane2.svg" alt="" />
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
+              <div className="newsletter-top"></div>
             </div>
             <div className="row justify-content-between">
               <div className="col-md-6 col-xl-3">
