@@ -145,6 +145,7 @@ function Home() {
                 maxWidth: 500,
                 textAlign: "center",
                 margin: 0,
+                color: "white",
               }}
             >
               Discover Lisbon in a fun, eco-friendly way. Explore our unique tuk
@@ -300,9 +301,9 @@ function Home() {
 
       {/* Seções de categorias, destinos e carrossel duplicado removidas. Apenas Featured trips e Recent Gallery permanecem. */}
 
-      <div className="gallery-area" id="gallery">
+      <div className="gallery-area mt-10" id="gallery">
         <div className="container th-container">
-          <div className="title-area text-center">
+          <div className="title-area text-center mt-10">
             <span className="sub-title">Make Your Tour More Pleasure</span>
             <h2 className="sec-title">Recent Gallery</h2>
           </div>
