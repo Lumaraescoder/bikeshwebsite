@@ -255,47 +255,7 @@ function Header() {
         </div>
       </div>
       <header className="th-header header-layout1">
-        <div className="header-top">
-          <div className="container th-container">
-            <div className="row justify-content-center justify-content-xl-between align-items-center">
-              <div className="col-auto d-none d-md-block">
-                <div className="header-links">
-                  <ul>
-                    {/* Address and opening hours removed as requested */}
-                  </ul>
-                </div>
-              </div>
-              <div className="col-auto">
-                <div className="header-right">
-                  <div className="currency-menu">
-                    <select className="form-select nice-select">
-                      <option selected="">language</option>
-                      <option>CNY</option>
-                      <option>EUR</option>
-                      <option>AUD</option>
-                    </select>
-                  </div>
-                  <div className="header-links">
-                    <ul>
-                      <li className="d-none d-md-inline-block">
-                        <a href="/faq">FAQ</a>
-                      </li>
-                      <li className="d-none d-md-inline-block">
-                        <a href="/contact">Support</a>
-                      </li>
-                      <li>
-                        <a href="#login-form" className="popup-content">
-                          Sign In / Register
-                          <i className="fa-regular fa-user"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+     
         <div className="sticky-wrapper">
           <div className="menu-area">
             <div className="container th-container">
