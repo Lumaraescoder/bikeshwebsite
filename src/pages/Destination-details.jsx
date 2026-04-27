@@ -15,6 +15,7 @@ function Destinationdetails() {
   useEffect(() => {
     const found = destinations.find((d) => d.slug === slug);
     setDestination(found || destinations[0]); // fallback to first
+    window.scrollTo(0, 0);
   }, [slug]);
 
   if (!destination) {

@@ -13,7 +13,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/effect-coverflow";
-// import "./BrandSlider.css"; // Custom CSS for hover
 
 function Home() {
   const navigate = useNavigate();
@@ -39,20 +38,6 @@ function Home() {
       title: "7 Amazing destinations for adventure seekers",
       link: "/blog-details",
     },
-  ];
-  const brands = [
-    "brand_1_1.svg",
-    "brand_1_2.svg",
-    "brand_1_3.svg",
-    "brand_1_4.svg",
-    "brand_1_5.svg",
-    "brand_1_6.svg",
-    "brand_1_7.svg",
-    "brand_1_8.svg",
-    "brand_1_4.svg",
-    "brand_1_3.svg",
-    "brand_1_2.svg",
-    "brand_1_1.svg",
   ];
   const teamMembers = [
     {
@@ -171,7 +156,6 @@ function Home() {
             </div>
           </div>
           <div className="row gy-4 gx-4 justify-content-center">
-            {/* Tours array for easier mapping */}
             {[
               {
                 name: "Alfama Old Town Tour",
@@ -297,10 +281,119 @@ function Home() {
         </div>
       </section>
 
-      {/* About section removed as requested */}
+      {/* Testimonials Section - positioned above Gallery */}
+      <section className="testi-area overflow-hidden space" id="testi-sec">
+        <div className="container-fluid p-0">
+          <div className="title-area mb-20 text-center">
+            <span className="sub-title">Testimonials</span>
+            <h2 className="sec-title">What Our Guests Say</h2>
+          </div>
+          <div className="slider-area">
+            <div
+              className="swiper th-slider testiSlider1 has-shadow"
+              id="testiSlider1"
+            >
+              <Swiper
+                modules={[Pagination, Autoplay]}
+                pagination={{ el: ".slider-pagination", clickable: true }}
+                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                initialSlide={0}
+                breakpoints={{
+                  0: { slidesPerView: 1 },
+                  767: { slidesPerView: 2, centeredSlides: true },
+                  992: { slidesPerView: 2, centeredSlides: true },
+                  1200: { slidesPerView: 3, centeredSlides: true },
+                }}
+                className="swiper-wrapper"
+              >
+                {[
+                  {
+                    name: "Maria & Thomas",
+                    image: "assets/img/photosoftheclientes/clients.jpeg",
+                    role: "Germany",
+                    text: "The best way to see Lisbon! Our driver was so knowledgeable and the tuk-tuk was beautifully decorated with flowers. Alfama tour was the highlight of our trip!",
+                  },
+                  {
+                    name: "Andrew & Family",
+                    image: "assets/img/photosoftheclientes/clinets2.jpeg",
+                    role: "United Kingdom",
+                    text: "Amazing experience for the whole family! Kids loved the open-air ride through Belém. We saw so much in just 2 hours. Highly recommend!",
+                  },
+                  {
+                    name: "Sophie & Friends",
+                    image: "assets/img/photosoftheclientes/capa.jpeg",
+                    role: "France",
+                    text: "We did the Chiado & Bairro Alto tour and it was incredible! The viewpoints at sunset were breathtaking. Best Instagram photos of our entire vacation!",
+                  },
+                  {
+                    name: "John & Emma",
+                    image: "assets/img/photosoftheclientes/calhambeque.jpeg",
+                    role: "USA",
+                    text: "The Christmas Lights tour was pure magic. Lisbon illuminated from a decorated tuk-tuk is something we'll never forget. Already planning to come back!",
+                  },
+                  {
+                    name: "Clara & Miguel",
+                    image: "assets/img/photosoftheclientes/clinetsfoto.jpeg",
+                    role: "Brazil",
+                    text: "As locals visiting Lisbon, we were amazed by the hidden spots our guide showed us. The full day tour covered everything. Worth every euro!",
+                  },
+                  {
+                    name: "Anna & Peter",
+                    image: "assets/img/photosoftheclientes/calhambeque2.jpeg",
+                    role: "Netherlands",
+                    text: "The Viewpoints Tour gave us the most stunning panoramic photos of Lisbon. Our driver knew exactly when and where to stop for the best light.",
+                  },
+                ].map((testimonial, index) => (
+                  <SwiperSlide key={index} className="swiper-slide">
+                    <div className="testi-card">
+                      <div className="testi-card_wrapper">
+                        <div className="testi-card_profile">
+                          <div className="testi-card_avater">
+                            <img src={testimonial.image} alt="testimonial" />
+                          </div>
+                          <div className="media-body">
+                            <h3 className="box-title">{testimonial.name}</h3>
+                            <span className="testi-card_desig">
+                              {testimonial.role}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="testi-card_review">
+                          {Array.from({ length: 5 }).map((_, i) => (
+                            <i key={i} className="fa-solid fa-star"></i>
+                          ))}
+                        </div>
+                      </div>
+                      <p className="testi-card_text">"{testimonial.text}"</p>
+                      <div className="testi-card-quote">
+                        <img src="assets/img/icon/testi-quote.svg" alt="img" />
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
 
-      {/* Seções de categorias, destinos e carrossel duplicado removidas. Apenas Featured trips e Recent Gallery permanecem. */}
+              <div className="slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="shape-mockup d-none d-xl-block"
+          data-bottom="-2%"
+          data-right="0%"
+        >
+          <img src="assets/img/shape/line2.png" alt="shape" />
+        </div>
+        <div
+          className="shape-mockup movingX d-none d-xl-block"
+          data-top="30%"
+          data-left="5%"
+        >
+          <img src="assets/img/shape/shape_7.png" alt="shape" />
+        </div>
+      </section>
 
+      {/* Gallery Section */}
       <div className="gallery-area mt-10" id="gallery">
         <div className="container th-container">
           <div className="title-area text-center mt-10">
@@ -308,7 +401,6 @@ function Home() {
             <h2 className="sec-title">Recent Gallery</h2>
           </div>
           <div className="row gy-10 gx-10 justify-content-center align-items-center">
-            {/* Mixed gallery using photosoftheclientes */}
             {[
               "capa.jpeg",
               "clinetsfoto.jpeg",
@@ -318,7 +410,7 @@ function Home() {
               "calhambeque2.jpeg",
               "clinets2.jpeg",
               "clientspanteao alfama.jpeg",
-            ].map((img, idx) => (
+            ].map((img) => (
               <div className="col-md-6 col-lg-2" key={img}>
                 <div className="gallery-card">
                   <div className="box-img global-img">
@@ -334,7 +426,7 @@ function Home() {
                         alt="gallery image"
                         style={{
                           width: "100%",
-                          aspectRatio: "1/1", // Mantém quadrado
+                          aspectRatio: "1/1",
                           height: "auto",
                           maxHeight: "180px",
                           objectFit: "cover",
@@ -370,387 +462,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/*       
-      <div className="counter-area space">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-6 col-xl-3 counter-card-wrap">
-              <div className="counter-card">
-                <div className="counter-shape">
-                  <span></span>
-                </div>
-                <div className="media-body">
-                  <h3 className="box-number">
-                    <span className="counter-number">12</span>
-                  </h3>
-                  <h6 className="counter-title">Years Experience</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-xl-3 counter-card-wrap">
-              <div className="counter-card">
-                <div className="counter-shape">
-                  <span></span>
-                </div>
-                <div className="media-body">
-                  <h3 className="box-number">
-                    <span className="counter-number">97</span>%
-                  </h3>
-                  <h6 className="counter-title">Retention Rate</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-xl-3 counter-card-wrap">
-              <div className="counter-card">
-                <div className="counter-shape">
-                  <span></span>
-                </div>
-                <div className="media-body">
-                  <h3 className="box-number">
-                    <span className="counter-number">8</span>k
-                  </h3>
-                  <h6 className="counter-title">Tour Completed</h6>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-xl-3 counter-card-wrap">
-              <div className="counter-card">
-                <div className="counter-shape">
-                  <span></span>
-                </div>
-                <div className="media-body">
-                  <h3 className="box-number">
-                    <span className="counter-number">19</span>k
-                  </h3>
-                  <h6 className="counter-title">Happy Travellers</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="shape-mockup shape1 d-none d-xl-block"
-            data-top="30%"
-            data-left="-15%"
-          >
-            <img src="assets/img/shape/shape_1.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup shape2 d-none d-xl-block"
-            data-top="45%"
-            data-left="-13%"
-          >
-            <img src="assets/img/shape/shape_2.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup shape3 d-none d-xl-block"
-            data-top="32%"
-            data-left="-7%"
-          >
-            <img src="assets/img/shape/shape_3.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup d-none d-xl-block"
-            data-bottom="-24%"
-            data-left="-15%"
-          >
-            <img src="assets/img/shape/shape_6.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup jump d-none d-xl-block"
-            data-top="5%"
-            data-right="-10%"
-          >
-            <img src="assets/img/shape/shape_5.png" alt="shape" />
-          </div>
-        </div>
-      </div> */}
-
-      {/* <section
-        className="bg-smoke space overflow-hidden"
-        style={{ backgroundImage: "url('/assets/img/bg/team_bg_1.png')" }}
-      >
-        <div className="container z-index-common">
-          <div className="title-area text-center">
-            <span className="sub-title">Meet with Guide</span>
-            <h2 className="sec-title">Tour Guide</h2>
-          </div>
-          <div className="slider-area">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              className="swiper th-slider teamSlider1 has-shadow"
-              id="teamSlider1"
-              spaceBetween={30}
-              slidesPerView={4}
-              pagination={{ clickable: true, el: ".slider-pagination" }}
-              breakpoints={{
-                0: { slidesPerView: 1 },
-                576: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                992: { slidesPerView: 3 },
-                1200: { slidesPerView: 4 },
-              }}
-            >
-              {teamMembers.map(
-                ({ name, img, designation, detailsLink }, idx) => (
-                  <SwiperSlide key={idx} className="swiper-slide">
-                    <div className="th-team team-box">
-                      <div className="team-img">
-                        <img src={img} alt="Team" />
-                      </div>
-                      <div className="team-content">
-                        <div className="media-body">
-                          <h3 className="box-title">
-                            <a href={detailsLink}>{name}</a>
-                          </h3>
-                          <span className="team-desig">{designation}</span>
-                          <div className="th-social">
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              href="https://facebook.com/"
-                            >
-                              <i className="fab fa-facebook-f"></i>
-                            </a>
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              href="https://twitter.com/"
-                            >
-                              <i className="fab fa-twitter"></i>
-                            </a>
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              href="https://instagram.com/"
-                            >
-                              <i className="fab fa-instagram"></i>
-                            </a>
-                            <a
-                              target="_blank"
-                              rel="noreferrer"
-                              href="https://linkedin.com/"
-                            >
-                              <i className="fab fa-linkedin-in"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                )
-              )}
-            </Swiper>
-          </div>
-        </div>
-      </section> */}
-
-      {/* <section className="testi-area overflow-hidden space" id="testi-sec">
-        <div className="container-fluid p-0">
-          <div className="title-area mb-20 text-center">
-            <span className="sub-title">Testimonial</span>
-            <h2 className="sec-title">What Client Say About us</h2>
-          </div>
-          <div className="slider-area">
-            <div
-              className="swiper th-slider testiSlider1 has-shadow"
-              id="testiSlider1"
-            >
-              <Swiper
-                modules={[Pagination]}
-                pagination={{ el: ".slider-pagination", clickable: true }}
-                initialSlide={2}
-                breakpoints={{
-                  0: { slidesPerView: 1 },
-                  767: { slidesPerView: 2, centeredSlides: true },
-                  992: { slidesPerView: 2, centeredSlides: true },
-                  1200: { slidesPerView: 2, centeredSlides: true },
-                  1400: { slidesPerView: 3, centeredSlides: true },
-                }}
-                className="swiper-wrapper"
-              >
-                {[
-                  {
-                    name: "Maria Doe",
-                    image: "assets/img/testimonial/testi_1_1.jpg",
-                    role: "Traveller",
-                  },
-                  {
-                    name: "Andrew Simon",
-                    image: "assets/img/testimonial/testi_1_2.jpg",
-                    role: "Traveller",
-                  },
-                  {
-                    name: "Alex Jordan",
-                    image: "assets/img/testimonial/testi_1_1.jpg",
-                    role: "Traveller",
-                  },
-                  {
-                    name: "Maria Doe",
-                    image: "assets/img/testimonial/testi_1_2.jpg",
-                    role: "Traveller",
-                  },
-                  {
-                    name: "Angelina Rose",
-                    image: "assets/img/testimonial/testi_1_1.jpg",
-                    role: "Traveller",
-                  },
-                  {
-                    name: "Maria Doe",
-                    image: "assets/img/testimonial/testi_1_1.jpg",
-                    role: "Traveller",
-                  },
-                  {
-                    name: "Andrew Simon",
-                    image: "assets/img/testimonial/testi_1_2.jpg",
-                    role: "Traveller",
-                  },
-                  {
-                    name: "Alex Jordan",
-                    image: "assets/img/testimonial/testi_1_1.jpg",
-                    role: "Traveller",
-                  },
-                ].map((testimonial, index) => (
-                  <SwiperSlide key={index} className="swiper-slide">
-                    <div className="testi-card">
-                      <div className="testi-card_wrapper">
-                        <div className="testi-card_profile">
-                          <div className="testi-card_avater">
-                            <img src={testimonial.image} alt="testimonial" />
-                          </div>
-                          <div className="media-body">
-                            <h3 className="box-title">{testimonial.name}</h3>
-                            <span className="testi-card_desig">
-                              {testimonial.role}
-                            </span>
-                          </div>
-                        </div>
-                        <div className="testi-card_review">
-                          {Array.from({ length: 5 }).map((_, i) => (
-                            <i key={i} className="fa-solid fa-star"></i>
-                          ))}
-                        </div>
-                      </div>
-                      <p className="testi-card_text">
-                        “A home that perfectly blends sustainability with luxury
-                        until I discovered Ecoland Residence. From the moment I
-                        stepped into this community, I knew it was where I
-                        wanted to live. The commitment to eco-friendly living”
-                      </p>
-                      <div className="testi-card-quote">
-                        <img src="assets/img/icon/testi-quote.svg" alt="img" />
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-
-              <div className="slider-pagination"></div>
-            </div>
-          </div>
-        </div>
-        <div
-          className="shape-mockup d-none d-xl-block"
-          data-bottom="-2%"
-          data-right="0%"
-        >
-          <img src="assets/img/shape/line2.png" alt="shape" />
-        </div>
-        <div
-          className="shape-mockup movingX d-none d-xl-block"
-          data-top="30%"
-          data-left="5%"
-        >
-          <img src="assets/img/shape/shape_7.png" alt="shape" />
-        </div>
-      </section> */}
-
-      {/* Brand/company carousel removed as requested */}
-
-      {/* <section
-        className="bg-smoke overflow-hidden space overflow-hidden"
-        id="blog-sec"
-      >
-        <div className="container">
-          <div className="mb-30 text-center text-md-start">
-            <div className="row align-items-center justify-content-between">
-              <div className="col-md-7">
-                <div className="title-area mb-md-0">
-                  <span className="sub-title">About Us Restaurant</span>
-                  <h2 className="sec-title">News & Articles From Tourm</h2>
-                </div>
-              </div>
-              <div className="col-md-auto">
-                <a href="/blog" className="th-btn style4 th-icon">
-                  See More Articles
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="slider-area">
-            <div className="swiper th-slider has-shadow" id="blogSlider1">
-              <Swiper
-                modules={[Navigation]}
-                navigation
-                // pagination={{ clickable: true }}
-                spaceBetween={30}
-                breakpoints={{
-                  0: { slidesPerView: 1 },
-                  576: { slidesPerView: 1 },
-                  768: { slidesPerView: 2 },
-                  992: { slidesPerView: 2 },
-                  1200: { slidesPerView: 3 },
-                }}
-              >
-                {blogPosts.map((post, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="blog-box th-ani">
-                      <div className="blog-img global-img">
-                        <img src={post.img} alt="blog image" />
-                      </div>
-                      <div className="blog-box_content">
-                        <div className="blog-meta">
-                          <a className="author" href="/blog">
-                            {post.date}
-                          </a>
-                          <a href="/blog">{post.readTime}</a>
-                        </div>
-                        <h3 className="box-title">
-                          <a href={post.link}>{post.title}</a>
-                        </h3>
-                        <a href={post.link} className="th-btn style4 th-icon">
-                          Read More
-                        </a>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-          </div>
-          <div
-            className="shape-mockup shape1 d-none d-xxl-block"
-            data-bottom="20%"
-            data-left="-17%"
-          >
-            <img src="assets/img/shape/shape_1.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup shape2 d-none d-xl-block"
-            data-bottom="5%"
-            data-left="-17%"
-          >
-            <img src="assets/img/shape/shape_2.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup shape3 d-none d-xxl-block"
-            data-bottom="12%"
-            data-left="-10%"
-          >
-            <img src="assets/img/shape/shape_3.png" alt="shape" />
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 }
