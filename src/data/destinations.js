@@ -89,7 +89,99 @@ export const destinations = [
    'assets/img/photosoftheclientes/clients.jpeg',
    'assets/img/photosoftheclientes/capa.jpeg'
   ]
+ },
+ {
+  id: 4,
+  slug: 'lisbon-full-day-experience',
+  title: 'Lisbon Full Day Experience',
+  backgroundImage: '/assets/img/backgrounds/lisboa-bairro-alfama.jpg',
+  heroImg: 'assets/img/photosoftheclientes/clinetsfoto.jpeg',
+  shortDesc: 'See it all! From Alfama to Belém, viewpoints, hidden gems, and local cuisine.',
+  longDesc: 'The ultimate Lisbon adventure! This full-day tuk-tuk experience covers everything from the historic Alfama district to the iconic Belém. Visit panoramic viewpoints, discover hidden gems known only to locals, and taste authentic Portuguese cuisine along the way. Perfect for first-time visitors who want to experience the complete Lisbon in one unforgettable day.',
+  duration: '6h',
+  price: '€120',
+  rating: 4.8,
+  reviews: 189,
+  location: 'Lisboa, Portugal',
+  visa: 'Espaço Schengen',
+  language: 'Português, Inglês',
+  currency: 'Euro (€)',
+  bestTime: 'Spring/Autumn',
+  highlights: [
+   'Complete city coverage',
+   'Panoramic viewpoints',
+   'Hidden local gems',
+   'Authentic cuisine stops',
+   'Full-day guided experience'
+  ],
+  gallery: [
+   'assets/img/photosoftheclientes/clinetsfoto.jpeg',
+   'assets/img/photosoftheclientes/capa.jpeg',
+   'assets/img/photosoftheclientes/calhambeque.jpeg',
+   'assets/img/photosoftheclientes/clients.jpeg'
+  ]
+ },
+ {
+  id: 5,
+  slug: 'lisbon-viewpoints-tour',
+  title: 'Lisbon Viewpoints Tour',
+  backgroundImage: '/assets/img/backgrounds/imgi_3_chiado-barrio-alto.jpg',
+  heroImg: 'assets/img/photosoftheclientes/calhambeque2.jpeg',
+  shortDesc: 'Marvel at the best panoramic views of Lisbon from its famous miradouros.',
+  longDesc: 'Discover Lisbon from above! This scenic tuk-tuk tour takes you to the city\'s most breathtaking viewpoints (miradouros). From the iconic Senhora do Monte to the romantic Santa Luzia, capture stunning photos of the Tagus River, red rooftops, and historic neighborhoods. Perfect for photographers, romantics, and anyone who wants to see Lisbon\'s beauty from a new perspective.',
+  duration: '2h',
+  price: '€50',
+  rating: 4.8,
+  reviews: 156,
+  location: 'Lisboa, Portugal',
+  visa: 'Espaço Schengen',
+  language: 'Português, Inglês',
+  currency: 'Euro (€)',
+  bestTime: 'Sunset hours',
+  highlights: [
+   'Senhora do Monte viewpoint',
+   'Santa Luzia viewpoint',
+   'Tagus River panoramas',
+   'Photo opportunities',
+   'Sunset experience'
+  ],
+  gallery: [
+   'assets/img/photosoftheclientes/calhambeque2.jpeg',
+   'assets/img/photosoftheclientes/capa.jpeg',
+   'assets/img/photosoftheclientes/clientspanteao alfama.jpeg',
+   'assets/img/photosoftheclientes/clinets2.jpeg'
+  ]
+ },
+ {
+  id: 6,
+  slug: 'christmas-lights-tour',
+  title: 'Christmas Lights Tour',
+  backgroundImage: '/assets/img/backgrounds/belem.jpg',
+  heroImg: 'assets/img/photosoftheclientes/clients.jpeg',
+  shortDesc: 'Experience the magic of Lisbon\'s festive illuminations from a decorated tuk-tuk.',
+  longDesc: 'Feel the holiday spirit in Lisbon! This special seasonal tour takes you through the city\'s most beautifully illuminated streets and squares. From Avenida da Liberdade to Praça do Comércio, marvel at the festive decorations while enjoying warm drinks and traditional Christmas treats in our cozy, decorated tuk-tuk. A magical experience for families, couples, and anyone who loves the holiday season.',
+  duration: '2h',
+  price: '€55',
+  rating: 4.8,
+  reviews: 98,
+  location: 'Lisboa, Portugal',
+  visa: 'Espaço Schengen',
+  language: 'Português, Inglês',
+  currency: 'Euro (€)',
+  bestTime: 'November - January',
+  highlights: [
+   'Festive illuminations',
+   'Avenida da Liberdade lights',
+   'Praça do Comércio display',
+   'Warm drinks included',
+   'Decorated tuk-tuk ride'
+  ],
+  gallery: [
+   'assets/img/photosoftheclientes/clients.jpeg',
+   'assets/img/photosoftheclientes/capa.jpeg',
+   'assets/img/photosoftheclientes/calhambeque.jpeg',
+   'assets/img/photosoftheclientes/clinetsfoto.jpeg'
+  ]
  }
 ];
-
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Activitiesdetails from "./pages/Activities-details";
@@ -41,7 +41,11 @@ function App() {
             path="/destination-details/:slug"
             element={<Destinationdetails />}
           />
-          <Route path="/tour-details" element={<Tourdetails />} />
+          <Route
+            path="/tour-details"
+            element={<Navigate to="/destination" replace />}
+          />
+          <Route path="/tour-details/:slug" element={<Tourdetails />} />
           <Route path="/tour" element={<Tour />} />
           <Route path="/tour-guider-details" element={<Tourguiderdetails />} />
         </Routes>

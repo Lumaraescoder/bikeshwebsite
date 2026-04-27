@@ -164,7 +164,7 @@ function Home() {
                 reviews: "4.9 (128 reviews)",
                 duration: "1h",
                 price: "From €30",
-                slug: "alfama-old-town-tour",
+                slug: "alfama",
               },
               {
                 name: "Chiado & Bairro Alto Tour",
@@ -173,7 +173,7 @@ function Home() {
                 reviews: "4.9 (243 reviews)",
                 duration: "1h",
                 price: "From €30",
-                slug: "chiado-bairro-alto-tour",
+                slug: "chiado-barrio-alto",
               },
               {
                 name: "Belém Discovery Tour",
@@ -182,7 +182,7 @@ function Home() {
                 reviews: "4.9 (312 reviews)",
                 duration: "2h",
                 price: "From €30",
-                slug: "belem-discovery-tour",
+                slug: "belem",
               },
               {
                 name: "Lisbon Full Day Experience",
@@ -216,12 +216,12 @@ function Home() {
                 <div
                   className="tour-box th-ani gsap-cursor"
                   style={{ height: "100%", cursor: "pointer" }}
-                  onClick={() => navigate(`/destination-details/${tour.slug}`)}
+                  onClick={() => navigate(`/tour-details/${tour.slug}`)}
                   tabIndex={0}
                   role="button"
                   onKeyPress={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
-                      navigate(`/destination-details/${tour.slug}`);
+                      navigate(`/tour-details/${tour.slug}`);
                     }
                   }}
                 >
@@ -264,7 +264,7 @@ function Home() {
                       }}
                       onClick={(e) => {
                         e.stopPropagation();
-                        navigate(`/destination-details/${tour.slug}#book`);
+                        navigate(`/tour-details/${tour.slug}#book`);
                       }}
                     >
                       <i
