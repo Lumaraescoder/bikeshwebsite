@@ -112,38 +112,7 @@ function Destinationdetails() {
                     </ul>
                   </div>
                 </div>
-                <div className="destination-gallery-wrapper">
-                  <h3 className="page-title mt-30 mb-30">From our gallery</h3>
-                  <Swiper
-                    modules={[Navigation, Pagination, EffectFade]}
-                    className="destination-gallery-carousel"
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    navigation
-                    pagination={{ clickable: true }}
-                    effect="fade"
-                    loop={true}
-                  >
-                    {gallery.map((img, i) => (
-                      <SwiperSlide key={i}>
-                        <div className="gallery-slide">
-                          <img
-                            src={"/" + img}
-                            alt="gallery image"
-                            className="img-fluid w-100"
-                            style={{ height: "400px", objectFit: "cover" }}
-                          />
-                          <a
-                            href={"/" + img}
-                            className="icon-btn popup-image position-absolute top-50 start-50 translate-middle"
-                          >
-                            <i className="fal fa-magnifying-glass-plus"></i>
-                          </a>
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
+
                 <section id="book" className="space-top">
                   <div className="container">
                     <div className="row justify-content-center">
