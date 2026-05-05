@@ -223,12 +223,17 @@ function Tourdetails() {
                       </div>
                       <div className="row">
                         <div className="col-lg-12 mx-auto">
-                          <form className="tour-book-form">
+                          <form
+                            className="tour-book-form"
+                            action="https://formspree.io/f/mlgznboo"
+                            method="POST"
+                          >
                             <div className="row">
                               <div className="col-md-6">
                                 <div className="form-group">
                                   <input
                                     type="text"
+                                    name="name"
                                     className="form-control"
                                     placeholder="Full Name"
                                     required
@@ -239,6 +244,7 @@ function Tourdetails() {
                                 <div className="form-group">
                                   <input
                                     type="email"
+                                    name="email"
                                     className="form-control"
                                     placeholder="Email Address"
                                     required
@@ -249,6 +255,7 @@ function Tourdetails() {
                                 <div className="form-group">
                                   <input
                                     type="tel"
+                                    name="phone"
                                     className="form-control"
                                     placeholder="Phone Number"
                                   />
@@ -258,6 +265,7 @@ function Tourdetails() {
                                 <div className="form-group">
                                   <input
                                     type="date"
+                                    name="date"
                                     className="form-control"
                                     required
                                   />
@@ -265,7 +273,11 @@ function Tourdetails() {
                               </div>
                               <div className="col-md-6">
                                 <div className="form-group">
-                                  <select className="form-control" required>
+                                  <select
+                                    name="people"
+                                    className="form-control"
+                                    required
+                                  >
                                     <option>Number of People</option>
                                     <option>1 Person</option>
                                     <option>2 People</option>
@@ -276,6 +288,7 @@ function Tourdetails() {
                               <div className="col-12">
                                 <div className="form-group">
                                   <textarea
+                                    name="message"
                                     className="form-control"
                                     rows="4"
                                     placeholder="Special Requirements"
@@ -283,6 +296,11 @@ function Tourdetails() {
                                 </div>
                               </div>
                               <div className="col-12">
+                                <input
+                                  type="hidden"
+                                  name="_subject"
+                                  value={`Booking for ${title}`}
+                                />
                                 <button type="submit" className="th-btn w-100">
                                   Book Now - {price}
                                 </button>

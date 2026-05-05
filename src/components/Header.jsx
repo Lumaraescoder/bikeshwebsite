@@ -56,7 +56,7 @@ function Header() {
       </div>
       <div id="preloader" className="preloader">
         <div className="preloader-inner">
-          <img src="assets/img/logo3.svg" alt="" />
+          {/* <img src="assets/img/logo3.svg" alt="" /> */}
         </div>
         <div id="loader" className="th-preloader">
           <div className="animation-preloader">
@@ -89,7 +89,7 @@ function Header() {
             <div className="th-widget-about">
               <div className="about-logo">
                 <a href="/">
-                  <img src="assets/img/logo2.svg" alt="Tourm" />
+                  {/* <img src="assets/img/logo2.svg" alt="Tourm" /> */}
                 </a>
               </div>
               <p className="about-text">
@@ -255,7 +255,6 @@ function Header() {
         </div>
       </div>
       <header className="th-header header-layout1">
-     
         <div className="sticky-wrapper">
           <div className="menu-area">
             <div className="container th-container">
