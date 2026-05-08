@@ -17,9 +17,7 @@ function Footer() {
                 <div className="widget footer-widget">
                   <div className="th-widget-about">
                     <div className="about-logo">
-                      <a href="/">
-                        <img src="assets/img/logo-white.svg" alt="Tourm" />
-                      </a>
+                      <a href="/">{/* Logo removed */}</a>
                     </div>
                     <p className="about-text">
                       Rapidiously myocardinate cross-platform intellectual

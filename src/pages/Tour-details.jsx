@@ -281,7 +281,11 @@ function Tourdetails() {
                                     <option>Number of People</option>
                                     <option>1 Person</option>
                                     <option>2 People</option>
-                                    <option>3+ People</option>
+                                    <option>3 People</option>
+                                    <option>4 People</option>
+                                    <option>5 People</option>
+                                    <option>6 People</option>
+                                    <option>7 People</option>
                                   </select>
                                 </div>
                               </div>

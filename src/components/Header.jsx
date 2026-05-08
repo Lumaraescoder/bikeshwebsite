@@ -56,7 +56,7 @@ function Header() {
       </div>
       <div id="preloader" className="preloader">
         <div className="preloader-inner">
-          {/* <img src="assets/img/logo3.svg" alt="" /> */}
+          <img src="assets/img/logonovapreloader.jpg" alt="" />
         </div>
         <div id="loader" className="th-preloader">
           <div className="animation-preloader">
@@ -233,9 +233,7 @@ function Header() {
             <i className="fal fa-times"></i>
           </button>
           <div className="mobile-logo">
-            <a href="/">
-              <img src="/assets/img/logo2.svg" alt="Tourm" />
-            </a>
+            <a href="/">{/* Logo removed */}</a>
           </div>
           <div className="th-mobile-menu">
             <ul>
@@ -261,9 +259,7 @@ function Header() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a href="/">
-                      <img src="/assets/img/logo.svg" alt="Tourm" />
-                    </a>
+                    <a href="/">{/* Logo removed */}</a>
                   </div>
                 </div>
                 <div className="col-auto me-xl-auto">
@@ -292,7 +288,7 @@ function Header() {
                 <div className="col-auto d-none d-xl-block">
                   <div className="header-button">
                     <a href="/contact" className="th-btn style3 th-icon">
-                      Book Now
+                      Contact
                     </a>
                   </div>
                 </div>
