@@ -68,23 +68,7 @@ function Header() {
         </div>
         <div id="loader" className="th-preloader">
           <div className="animation-preloader">
-            <div className="txt-loading">
-              <span preloader-text="T" className="characters">
-                T{" "}
-              </span>
-              <span preloader-text="O" className="characters">
-                O{" "}
-              </span>
-              <span preloader-text="U" className="characters">
-                U{" "}
-              </span>
-              <span preloader-text="R" className="characters">
-                R{" "}
-              </span>
-              <span preloader-text="M" className="characters">
-                M
-              </span>
-            </div>
+            <div className="txt-loading"></div>
           </div>
         </div>
       </div>
