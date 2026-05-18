@@ -5,3 +5,14 @@
   text-align: center;
 } */
 
+/* Aumenta a altura dos cards da galeria */
+.gallery-box.style5 .gallery-img {
+  height: 460px;
+}
+
+@media (max-width: 991px) {
+  .gallery-box.style5 .gallery-img {
+    height: 340px;
+  }
+}
+
