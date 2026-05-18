@@ -438,63 +438,6 @@ function Tourdetails() {
               </aside>
             </div>
           </div>
-
-          <div className="location-map">
-            <h3 className="page-title mt-45 mb-30">Location</h3>
-            <div className="contact-map style3">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.979956374462!2d-9.142685923699003!3d38.72224937175854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4e33b%3A0x400ebbde49036d0!2sLisbon%2C%20Portugal!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-              <div className="contact-icon">
-                <img src="assets/img/icon/location-dot3.svg" alt="" />
-              </div>
-            </div>
-          </div>
-          <div
-            className="shape-mockup about-shape movingX d-none d-xxl-block"
-            data-bottom="40%"
-            data-right="0%"
-          >
-            <img src="assets/img/normal/about-slide-img.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup about-rating d-none d-xxl-block"
-            data-bottom="48%"
-            data-right="-12%"
-          >
-            <i className="fa-sharp fa-solid fa-star"></i>
-            <span>4.9k</span>
-          </div>
-          <div
-            className="shape-mockup about-emoji d-none d-xxl-block"
-            data-bottom="45%"
-            data-right="20%"
-          >
-            <img src="assets/img/icon/emoji.png" alt="" />
-          </div>
-          <div
-            className="shape-mockup shape1 d-none d-xxl-block"
-            data-bottom="55%"
-            data-right="-12%"
-          >
-            <img src="assets/img/shape/shape_1.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup shape2 d-none d-xl-block"
-            data-bottom="51%"
-            data-right="-8%"
-          >
-            <img src="assets/img/shape/shape_2.png" alt="shape" />
-          </div>
-          <div
-            className="shape-mockup shape3 d-none d-xxl-block"
-            data-bottom="53%"
-            data-right="-5%"
-          >
-            <img src="assets/img/shape/shape_3.png" alt="shape" />
-          </div>
         </div>
       </section>
     </div>

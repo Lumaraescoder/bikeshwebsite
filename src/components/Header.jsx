@@ -252,20 +252,21 @@ function Header() {
             <i className="fal fa-times"></i>
           </button>
           <div className="mobile-logo">
-            <a href="/">Fancy</a>
+            <a href="/">Fancy Tuk Tuk</a>
           </div>
           <div className="th-mobile-menu">
             <ul>
               <li>
-                <a className="active" href="#hero">
+                <a className="active" href="/#hero">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#service-sec">Tours</a>
+                <a href="/#service-sec">Tours</a>
               </li>
               <li>
-                <a href="#gallery">Gallery</a>
+                <a href="/#gallery">Gallery
+                </a>
               </li>
             </ul>
           </div>
@@ -278,22 +279,22 @@ function Header() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a href="/">Fancy</a>
+                    <a href="/">Fancy Tuk Tuk</a>
                   </div>
                 </div>
                 <div className="col-auto me-xl-auto">
                   <nav className="main-menu d-none d-xl-inline-block">
                     <ul>
                       <li>
-                        <a className="active" href="#hero">
+                        <a className="active" href="/#hero">
                           Home
                         </a>
                       </li>
                       <li>
-                        <a href="#service-sec">Tours</a>
+                        <a href="/#service-sec">Tours</a>
                       </li>
                       <li>
-                        <a href="#gallery">Gallery</a>
+                        <a href="/#gallery">Gallery</a>
                       </li>
                     </ul>
                   </nav>
