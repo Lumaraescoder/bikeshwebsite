@@ -122,7 +122,7 @@ function Home() {
                 textAlign: "center",
               }}
             >
-              Welcome to Tuk Tuk Lisbon
+              Welcome to Fancy Tuk Tuk Lisbon
             </h1>
             <p
               style={{
