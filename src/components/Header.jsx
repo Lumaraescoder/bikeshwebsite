@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import "./header.css";
 
 function Header() {
+  const [sideOpen, setSideOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const openSide = () => setSideOpen(true);
+  const closeSide = () => setSideOpen(false);
+  const toggleMobile = () => setMobileOpen((s) => !s);
+
   return (
     <div>
       {/* <div className="cursor-follower"></div> */}
@@ -80,9 +88,9 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="sidemenu-wrapper sidemenu-info">
+      <div className={`sidemenu-wrapper sidemenu-info ${sideOpen ? "open show" : ""}`}>
         <div className="sidemenu-content">
-          <button className="closeButton sideMenuCls">
+          <button className="closeButton sideMenuCls" onClick={closeSide}>
             <i className="far fa-times"></i>
           </button>
           <div className="widget">
@@ -214,8 +222,9 @@ function Header() {
               </div>
             </div>
           </div>
+          </div>
         </div>
-      </div>
+        <div className={`sidemenu-overlay ${sideOpen ? "visible" : ""}`} onClick={closeSide}></div>
       <div className="popup-search-box">
         <button className="searchClose">
           <i className="fal fa-times"></i>
@@ -227,13 +236,13 @@ function Header() {
           </button>
         </form>
       </div>
-      <div className="th-menu-wrapper onepage-nav">
+      <div className={`th-menu-wrapper onepage-nav ${mobileOpen ? "show" : ""}`}>
         <div className="th-menu-area text-center">
-          <button className="th-menu-toggle">
+          <button className="th-menu-toggle" onClick={() => setMobileOpen(false)}>
             <i className="fal fa-times"></i>
           </button>
           <div className="mobile-logo">
-            <a href="/">{/* Logo removed */}</a>
+            <a href="/">Fancy</a>
           </div>
           <div className="th-mobile-menu">
             <ul>
@@ -259,7 +268,7 @@ function Header() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a href="/">{/* Logo removed */}</a>
+                    <a href="/">Fancy</a>
                   </div>
                 </div>
                 <div className="col-auto me-xl-auto">
@@ -281,6 +290,7 @@ function Header() {
                   <button
                     type="button"
                     className="th-menu-toggle d-block d-xl-none"
+                    onClick={toggleMobile}
                   >
                     <i className="far fa-bars"></i>
                   </button>

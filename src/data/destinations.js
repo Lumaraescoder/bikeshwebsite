@@ -17,11 +17,12 @@ export const destinations = [
   currency: 'Euro (€)',
   bestTime: 'Todo o ano (evite calor de Agosto)',
   highlights: [
-   'Visita ao Panteão Nacional',
-   'Miradouro Senhora do Monte',
-   'Bairro do Fado tradicional',
-   'Azulejos históricos',
-   'Acesso exclusivo em tuk-tuk'
+   'Lisbon Cathedral (Sé de Lisboa)',
+   'National Pantheon',
+   'Senhora do Monte Viewpoint',
+   'Traditional Fado District',
+   'Hidden Narrow Streets',
+   'Historic Tiles & Architecture'
   ],
   gallery: [
    'assets/img/photosoftheclientes/clientspanteao alfama.jpeg',
@@ -33,11 +34,11 @@ export const destinations = [
  {
   id: 2,
   slug: 'belem',
-  title: 'Belém - Descobertas e Pastéis Originais',
+  title: 'Belém - Discoveries & Original Custard Tarts',
   backgroundImage: '/assets/img/backgrounds/belem.jpg',
   heroImg: 'assets/img/photosoftheclientes/calhambeque.jpeg',
-  shortDesc: 'Torre de Belém, Mosteiro dos Jerónimos e a pastelaria original dos Pastéis de Belém.',
-  longDesc: 'Viagem ao coração das Descobertas! Visite Patrimónios UNESCO: Torre de Belém e Mosteiro dos Jerónimos. Conheça a história dos grandes navegadores portugueses. Prove os autênticos Pastéis de Belém na pastelaria original (1837). Passeio à beira-rio com o Padrão dos Descobrimentos. Experiência completa da Lisboa dos Descobrimentos.',
+  shortDesc: 'Belém Tower, Jerónimos Monastery, and the original Pastéis de Belém bakery.',
+  longDesc: 'Travel to the heart of Portugal’s Age of Discoveries! Visit UNESCO World Heritage landmarks such as Belém Tower and Jerónimos Monastery. Learn about the great Portuguese navigators and explorers. Taste the authentic Pastéis de Belém at the original bakery founded in 1837. Enjoy scenic riverside views and discover Lisbon’s maritime history.',
   duration: '2h',
   price: '€45',
   rating: 4.8,
@@ -48,11 +49,12 @@ export const destinations = [
   currency: 'Euro (€)',
   bestTime: 'Primavera/Outono (evite multidões de verão)',
   highlights: [
-   'Torre de Belém UNESCO',
-   'Mosteiro dos Jerónimos',
-   'Pastéis de Belém originais',
-   'Padrão dos Descobrimentos',
-   'Passeio ribeirinho em tuk-tuk'
+   'Belém Tower (UNESCO)',
+   'Jerónimos Monastery (UNESCO)',
+   'Monument to the Discoveries',
+   'Original Pastéis de Belém',
+   'Tagus Riverside Views',
+   'Portuguese Discoveries History'
   ],
   gallery: [
    'assets/img/photosoftheclientes/calhambeque.jpeg',
@@ -63,11 +65,11 @@ export const destinations = [
  {
   id: 3,
   slug: 'chiado-barrio-alto',
-  title: 'Chiado & Bairro Alto - Arte e Noite Lisboeta',
+  title: 'Chiado & Bairro Alto - Art and Lisbon Nightlife',
   backgroundImage: '/assets/img/backgrounds/imgi_3_chiado-barrio-alto.jpg',
   heroImg: 'assets/img/photosoftheclientes/capa.jpeg',
-  shortDesc: 'Chiado elegante, Bairro Alto artístico e vida noturna vibrante.',
-  longDesc: 'Do glamour do Chiado às ruas boémias do Bairro Alto! Descubra butiques de luxo, livrarias históricas e cafés emblemáticos. Suba às escadinhas coloridas com street art, bares de fado e miradouros ao pôr do sol. Prove ginjinha nas tascas tradicionais e sinta o pulsar da noite lisboeta. Tour perfeito para quem quer a Lisboa jovem e criativa.',
+  shortDesc: 'Elegant Chiado, artistic Bairro Alto, and Lisbon’s vibrant nightlife.',
+  longDesc: 'From the elegant streets of Chiado to the bohemian atmosphere of Bairro Alto! Discover luxury boutiques, historic bookstores, colorful stairways, street art, traditional bars, and panoramic viewpoints. Taste authentic ginjinha and experience the energy of Lisbon’s nightlife and creative culture.',
   duration: '2h 30min',
   price: '€40',
   rating: 4.7,
@@ -78,11 +80,12 @@ export const destinations = [
   currency: 'Euro (€)',
   bestTime: 'Final da tarde (foco na noite)',
   highlights: [
-   'Chiado - compras de luxo',
-   'Bairro Alto - street art',
-   'Introdução ao fado e noite',
-   'Miradouros ao pôr do sol',
-   'Prova de ginjinha tradicional'
+   'Chiado Historic District',
+   'Bairro Alto Bohemian Streets',
+   'Santa Catarina Viewpoint',
+   'Traditional Ginjinha Tasting',
+   'Street Art & Local Culture',
+   'Lisbon Nightlife Atmosphere'
   ],
   gallery: [
    'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
@@ -97,7 +100,7 @@ export const destinations = [
   backgroundImage: '/assets/img/backgrounds/lisboa-bairro-alfama.jpg',
   heroImg: 'assets/img/photosoftheclientes/clinetsfoto.jpeg',
   shortDesc: 'See it all! From Alfama to Belém, viewpoints, hidden gems, and local cuisine.',
-  longDesc: 'The ultimate Lisbon adventure! This full-day tuk-tuk experience covers everything from the historic Alfama district to the iconic Belém. Visit panoramic viewpoints, discover hidden gems known only to locals, and taste authentic Portuguese cuisine along the way. Perfect for first-time visitors who want to experience the complete Lisbon in one unforgettable day.',
+  longDesc: 'The ultimate Lisbon adventure! This full-day tuk-tuk experience covers everything from the historic Alfama district to iconic Belém. Visit panoramic viewpoints, discover hidden local gems, and enjoy authentic Portuguese culture throughout the journey. Perfect for travelers who want to experience the complete Lisbon in one unforgettable day.',
   duration: '6h',
   price: '€120',
   rating: 4.8,
@@ -108,11 +111,12 @@ export const destinations = [
   currency: 'Euro (€)',
   bestTime: 'Spring/Autumn',
   highlights: [
-   'Complete city coverage',
-   'Panoramic viewpoints',
-   'Hidden local gems',
-   'Authentic cuisine stops',
-   'Full-day guided experience'
+   'Alfama Historic District',
+   'Belém Monuments',
+   'Panoramic Viewpoints',
+   'Hidden Local Gems',
+   'Authentic Portuguese Culture',
+   'Private Guided Experience'
   ],
   gallery: [
    'assets/img/photosoftheclientes/clinetsfoto.jpeg',
@@ -128,7 +132,7 @@ export const destinations = [
   backgroundImage: '/assets/img/backgrounds/imgi_3_chiado-barrio-alto.jpg',
   heroImg: 'assets/img/photosoftheclientes/calhambeque2.jpeg',
   shortDesc: 'Marvel at the best panoramic views of Lisbon from its famous miradouros.',
-  longDesc: 'Discover Lisbon from above! This scenic tuk-tuk tour takes you to the city\'s most breathtaking viewpoints (miradouros). From the iconic Senhora do Monte to the romantic Santa Luzia, capture stunning photos of the Tagus River, red rooftops, and historic neighborhoods. Perfect for photographers, romantics, and anyone who wants to see Lisbon\'s beauty from a new perspective.',
+  longDesc: 'Discover Lisbon from above! This scenic tuk-tuk tour takes you to the city’s most breathtaking viewpoints. From Senhora do Monte to Santa Luzia and Portas do Sol, capture incredible views of the Tagus River, red rooftops, and historic neighborhoods. Perfect for photographers, couples, and sunset lovers.',
   duration: '2h',
   price: '€50',
   rating: 4.8,
@@ -139,11 +143,12 @@ export const destinations = [
   currency: 'Euro (€)',
   bestTime: 'Sunset hours',
   highlights: [
-   'Senhora do Monte viewpoint',
-   'Santa Luzia viewpoint',
-   'Tagus River panoramas',
-   'Photo opportunities',
-   'Sunset experience'
+   'Senhora do Monte Viewpoint',
+   'Santa Luzia Viewpoint',
+   'Portas do Sol Terrace',
+   'Tagus River Panoramas',
+   'Best Lisbon Photo Spots',
+   'Sunset Scenic Experience'
   ],
   gallery: [
    'assets/img/photosoftheclientes/calhambeque2.jpeg',
@@ -158,8 +163,8 @@ export const destinations = [
   title: 'Christmas Lights Tour',
   backgroundImage: '/assets/img/backgrounds/belem.jpg',
   heroImg: 'assets/img/photosoftheclientes/clients.jpeg',
-  shortDesc: 'Experience the magic of Lisbon\'s festive illuminations from a decorated tuk-tuk.',
-  longDesc: 'Feel the holiday spirit in Lisbon! This special seasonal tour takes you through the city\'s most beautifully illuminated streets and squares. From Avenida da Liberdade to Praça do Comércio, marvel at the festive decorations while enjoying warm drinks and traditional Christmas treats in our cozy, decorated tuk-tuk. A magical experience for families, couples, and anyone who loves the holiday season.',
+  shortDesc: 'Experience the magic of Lisbon’s festive illuminations from a decorated tuk-tuk.',
+  longDesc: 'Feel the Christmas spirit in Lisbon! This seasonal tour takes you through the city’s most beautifully illuminated streets and squares. From Avenida da Liberdade to Praça do Comércio, enjoy Lisbon’s magical decorations while riding in a cozy tuk-tuk. A perfect experience for families, couples, and holiday lovers.',
   duration: '2h',
   price: '€55',
   rating: 4.8,
@@ -170,11 +175,12 @@ export const destinations = [
   currency: 'Euro (€)',
   bestTime: 'November - January',
   highlights: [
-   'Festive illuminations',
-   'Avenida da Liberdade lights',
-   'Praça do Comércio display',
-   'Warm drinks included',
-   'Decorated tuk-tuk ride'
+   'Christmas Lights Displays',
+   'Avenida da Liberdade Decorations',
+   'Praça do Comércio Illuminations',
+   'Festive Lisbon Atmosphere',
+   'Night Scenic Tour',
+   'Private Tuk-Tuk Experience'
   ],
   gallery: [
    'assets/img/photosoftheclientes/clients.jpeg',
@@ -184,4 +190,3 @@ export const destinations = [
   ]
  }
 ];
-
