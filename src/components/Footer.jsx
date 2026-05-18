@@ -17,7 +17,13 @@ function Footer() {
                 <div className="widget footer-widget">
                   <div className="th-widget-about">
                     <div className="about-logo">
-                      <a href="/">{/* Logo removed */}</a>
+                      <a href="/">
+                        <img
+                          src="assets/img/logonovapreloader.jpg"
+                          alt="Fancy Tuk Tuk"
+                          style={{ maxWidth: "180px", width: "100%", height: "auto" }}
+                        />
+                      </a>
                     </div>
                     <p className="about-text">
                       Rapidiously myocardinate cross-platform intellectual

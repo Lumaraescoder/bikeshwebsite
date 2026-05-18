@@ -77,7 +77,7 @@ function Home() {
           }}
         >
           <img
-            src="assets/img/photosoftheclientes/capa.jpeg"
+            src="assets/img/photosoftheclientes/capa.png"
             alt="Lisbon Tuk Tuk Cover"
             style={{
               width: "100%",
@@ -120,6 +120,7 @@ function Home() {
                 fontWeight: 700,
                 marginBottom: "0.7rem",
                 textAlign: "center",
+                color: "white",
               }}
             >
               Welcome to Fancy Tuk Tuk Lisbon

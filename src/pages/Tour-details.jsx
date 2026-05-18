@@ -124,10 +124,10 @@ function Tourdetails() {
                     ))}
                   </Swiper>
                   <button className="slider-arrow style3 slider-prev">
-                    <img src="assets/img/icon/hero-arrow-left.svg" alt="" />
+                    <img src="/assets/img/icon/hero-arrow-left.svg" alt="" />
                   </button>
                   <button className="slider-arrow style3 slider-next">
-                    <img src="assets/img/icon/hero-arrow-right.svg" alt="" />
+                    <img src="/assets/img/icon/hero-arrow-right.svg" alt="" />
                   </button>
                 </div>
                 <div className="page-content">

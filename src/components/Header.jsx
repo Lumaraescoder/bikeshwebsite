@@ -252,7 +252,7 @@ function Header() {
             <i className="fal fa-times"></i>
           </button>
           <div className="mobile-logo">
-            <a href="/">Fancy Tuk Tuk</a>
+            <a href="/" style={{ color: "#fff" }}>Fancy Tuk Tuk</a>
           </div>
           <div className="th-mobile-menu">
             <ul>
@@ -265,8 +265,10 @@ function Header() {
                 <a href="/#service-sec">Tours</a>
               </li>
               <li>
-                <a href="/#gallery">Gallery
-                </a>
+                <a href="/#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="/#testi-sec">Testimonials</a>
               </li>
             </ul>
           </div>
@@ -279,7 +281,7 @@ function Header() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a href="/">Fancy Tuk Tuk</a>
+                    <a href="/" style={{ color: "#fff" }}>Fancy Tuk Tuk</a>
                   </div>
                 </div>
                 <div className="col-auto me-xl-auto">
@@ -295,6 +297,9 @@ function Header() {
                       </li>
                       <li>
                         <a href="/#gallery">Gallery</a>
+                      </li>
+                      <li>
+                        <a href="/#testi-sec">Testimonials</a>
                       </li>
                     </ul>
                   </nav>
@@ -322,6 +327,7 @@ function Header() {
           </div>
         </div>
       </header>
+
     </div>
   );
 }
