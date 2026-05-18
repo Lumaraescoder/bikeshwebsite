@@ -88,7 +88,9 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className={`sidemenu-wrapper sidemenu-info ${sideOpen ? "open show" : ""}`}>
+      <div
+        className={`sidemenu-wrapper sidemenu-info ${sideOpen ? "open show" : ""}`}
+      >
         <div className="sidemenu-content">
           <button className="closeButton sideMenuCls" onClick={closeSide}>
             <i className="far fa-times"></i>
@@ -222,9 +224,12 @@ function Header() {
               </div>
             </div>
           </div>
-          </div>
         </div>
-        <div className={`sidemenu-overlay ${sideOpen ? "visible" : ""}`} onClick={closeSide}></div>
+      </div>
+      <div
+        className={`sidemenu-overlay ${sideOpen ? "visible" : ""}`}
+        onClick={closeSide}
+      ></div>
       <div className="popup-search-box">
         <button className="searchClose">
           <i className="fal fa-times"></i>
@@ -236,9 +241,14 @@ function Header() {
           </button>
         </form>
       </div>
-      <div className={`th-menu-wrapper onepage-nav ${mobileOpen ? "show" : ""}`}>
+      <div
+        className={`th-menu-wrapper onepage-nav ${mobileOpen ? "th-body-visible" : ""}`}
+      >
         <div className="th-menu-area text-center">
-          <button className="th-menu-toggle" onClick={() => setMobileOpen(false)}>
+          <button
+            className="th-menu-toggle"
+            onClick={() => setMobileOpen(false)}
+          >
             <i className="fal fa-times"></i>
           </button>
           <div className="mobile-logo">
