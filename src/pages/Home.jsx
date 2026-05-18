@@ -123,7 +123,7 @@ function Home() {
                 color: "white",
               }}
             >
-              Welcome to Fancy Tuk Tuk Lisbon
+              Fancy Tuk Tuk Lisbon
             </h1>
             <p
               style={{
@@ -160,7 +160,7 @@ function Home() {
             {[
               {
                 name: "Alfama Old Town Tour",
-                img: "assets/img/photosoftheclientes/clientspanteao%20alfama.jpeg",
+                img: "assets/img/photosoftheclientes/clients.jpeg",
                 desc: "Explore the heart of Lisbon's oldest district, winding alleys, Fado music, and the stunning Panteão Nacional. Perfect for history lovers and first-time visitors.",
                 reviews: "4.9 (128 reviews)",
                 duration: "1h",
@@ -187,7 +187,7 @@ function Home() {
               },
               {
                 name: "Lisbon Full Day Experience",
-                img: "assets/img/photosoftheclientes/clinetsfoto.jpeg",
+                img: "assets/img/photosoftheclientes/capa.jpeg",
                 desc: "See it all! From Alfama to Belém, viewpoints, hidden gems, and local cuisine. The ultimate tuk tuk adventure for explorers.",
                 reviews: "4.8 (189 reviews)",
                 duration: "6h",
@@ -196,7 +196,7 @@ function Home() {
               },
               {
                 name: "Lisbon Viewpoints Tour",
-                img: "assets/img/photosoftheclientes/calhambeque2.jpeg",
+                img: "assets/img/photosoftheclientes/clinetsfoto.jpeg",
                 desc: "Marvel at the best panoramic views of Lisbon from its famous miradouros. Perfect for photographers and romantics.",
                 reviews: "4.8 (156 reviews)",
                 duration: "2h",
@@ -205,7 +205,7 @@ function Home() {
               },
               {
                 name: "Christmas Lights Tour",
-                img: "assets/img/photosoftheclientes/clients.jpeg",
+                img: "assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg",
                 desc: "Experience the magic of Lisbon's festive illuminations and holiday spirit from the comfort of a tuk tuk. Seasonal (Nov-Jan).",
                 reviews: "4.8 (98 reviews)",
                 duration: "2h",

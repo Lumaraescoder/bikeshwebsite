@@ -8,7 +8,7 @@ export const destinations = [
   shortDesc: 'Explore the narrow streets of Lisbon\'s oldest neighborhood, birthplace of Fado and home to the National Pantheon. Perfect for history lovers.',
   longDesc: 'Feel Lisbon\'s soul in Alfama! This electric tuk-tuk tour takes you through labyrinthine alleys, traditional Fado houses, and stunning viewpoints. Visit the National Pantheon, climb to Senhora do Monte Viewpoint, and discover hidden historic tiles. Hear live Fado stories and taste authentic snacks. Perfect for experiencing Lisbon like a local.',
   duration: '1h',
-  price: '€35',
+  price: '€30',
   rating: 4.9,
   reviews: 128,
   location: 'Lisboa, Portugal',
@@ -25,7 +25,6 @@ export const destinations = [
    'Historic Tiles & Architecture'
   ],
   gallery: [
-   'assets/img/photosoftheclientes/clientspanteao alfama.jpeg',
    'assets/img/photosoftheclientes/capa.jpeg',
    'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
    'assets/img/photosoftheclientes/clients.jpeg'
@@ -130,7 +129,7 @@ export const destinations = [
   slug: 'lisbon-viewpoints-tour',
   title: 'Lisbon Viewpoints Tour',
   backgroundImage: '/assets/img/backgrounds/imgi_3_chiado-barrio-alto.jpg',
-  heroImg: 'assets/img/photosoftheclientes/calhambeque2.jpeg',
+  heroImg: 'assets/img/photosoftheclientes/clinetsfoto.jpeg',
   shortDesc: 'Marvel at the best panoramic views of Lisbon from its famous miradouros.',
   longDesc: 'Discover Lisbon from above! This scenic tuk-tuk tour takes you to the city’s most breathtaking viewpoints. From Senhora do Monte to Santa Luzia and Portas do Sol, capture incredible views of the Tagus River, red rooftops, and historic neighborhoods. Perfect for photographers, couples, and sunset lovers.',
   duration: '2h',
@@ -151,7 +150,7 @@ export const destinations = [
    'Sunset Scenic Experience'
   ],
   gallery: [
-   'assets/img/photosoftheclientes/calhambeque2.jpeg',
+   'assets/img/photosoftheclientes/clinetsfoto.jpeg',
    'assets/img/photosoftheclientes/capa.jpeg',
    'assets/img/photosoftheclientes/clientspanteao alfama.jpeg',
    'assets/img/photosoftheclientes/clinets2.jpeg'
@@ -183,10 +182,10 @@ export const destinations = [
    'Private Tuk-Tuk Experience'
   ],
   gallery: [
-   'assets/img/photosoftheclientes/clients.jpeg',
+   'assets/img/photosoftheclientes/clinetsfoto.jpeg',
    'assets/img/photosoftheclientes/capa.jpeg',
    'assets/img/photosoftheclientes/calhambeque.jpeg',
-   'assets/img/photosoftheclientes/clinetsfoto.jpeg'
+   'assets/img/photosoftheclientes/clients.jpeg'
   ]
  }
 ];

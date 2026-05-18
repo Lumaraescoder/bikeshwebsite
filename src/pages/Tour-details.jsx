@@ -91,7 +91,7 @@ function Tourdetails() {
                             alt={title}
                             style={{
                               width: "100%",
-                              maxHeight: "500px",
+                              maxHeight: window.innerWidth > 767 ? "500px" : "350px",
                               objectFit: "cover",
                               borderRadius: "8px",
                             }}
@@ -209,7 +209,7 @@ function Tourdetails() {
                   </div>
 
                   {/* Booking Form Section */}
-                  <section id="book" className="space-top mb-50">
+                  <section id="contact" className="space-top mb-50">
                     <div className="container">
                       <div className="row justify-content-center">
                         <div className="col-lg-12">

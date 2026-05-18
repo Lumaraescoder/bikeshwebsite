@@ -270,6 +270,9 @@ function Header() {
               <li>
                 <a href="/#testi-sec">Testimonials</a>
               </li>
+              <li>
+                <a href="/#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -300,6 +303,9 @@ function Header() {
                       </li>
                       <li>
                         <a href="/#testi-sec">Testimonials</a>
+                      </li>
+                      <li>
+                        <a href="/#contact">Contact</a>
                       </li>
                     </ul>
                   </nav>
