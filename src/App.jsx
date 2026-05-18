@@ -18,11 +18,15 @@ import Tourdetails from "./pages/Tour-details";
 import Tour from "./pages/Tour";
 import Tourguiderdetails from "./pages/Tour-guider-details";
 import Cursorfollower from "./components/Cursor-follower";
+import WhatsAppFloating from "./components/WhatsAppFloating";
+
+import "./whatsapp-float.css";
 
 function App() {
   return (
     <div>
       <Header />
+      <WhatsAppFloating />
       <BrowserRouter>
         <Cursorfollower />
         <Routes>
