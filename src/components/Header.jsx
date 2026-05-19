@@ -257,6 +257,24 @@ function Header() {
               <li>
                 <a href="/#contact">Contact</a>
               </li>
+              <li>
+                <a
+                  href="#"
+                  aria-hidden="true"
+                  style={{ visibility: "hidden", display: "inline-block", width: "80px" }}
+                >
+                  Spacer
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-hidden="true"
+                  style={{ visibility: "hidden", display: "inline-block", width: "80px" }}
+                >
+                  Spacer
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -290,6 +308,15 @@ function Header() {
                       </li>
                       <li>
                         <a href="/#contact">Contact</a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          aria-hidden="true"
+                          style={{ visibility: "hidden", display: "inline-block", width: "80px" }}
+                        >
+                          Spacer
+                        </a>
                       </li>
                     </ul>
                   </nav>

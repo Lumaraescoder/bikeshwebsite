@@ -8367,7 +8367,7 @@ ol.wp-block-rss {
 
 .header-layout1 .main-menu {
     position: relative;
-    padding-left: 70px
+    padding-left: 120px;
 }
 
 @media (min-width: 1930px) {
@@ -8378,7 +8378,13 @@ ol.wp-block-rss {
 
 @media (max-width: 1399px) {
     .header-layout1 .main-menu {
-        padding-left: 40px
+        padding-left: 70px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .header-layout1 .main-menu {
+        padding-left: 50px;
     }
 }
 

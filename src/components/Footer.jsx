@@ -21,14 +21,20 @@ function Footer() {
                         <img
                           src="assets/img/logonovapreloader.jpg"
                           alt="Fancy Tuk Tuk"
-                          style={{ maxWidth: "180px", width: "100%", height: "auto" }}
+                          style={{
+                            maxWidth: "180px",
+                            width: "100%",
+                            height: "auto",
+                          }}
                         />
                       </a>
                     </div>
                     <p className="about-text">
-                      Rapidiously myocardinate cross-platform intellectual
-                      capital model. Appropriately create interactive
-                      infrastructures
+                      We are Fancy Tuk Tuk, a company dedicated to offering
+                      unique and authentic tours through Lisbon. We take you
+                      through the city's main historical landmarks, viewpoints,
+                      and hidden streets, always providing comfort, fun, and an
+                      unforgettable local experience.
                     </p>
                     <div className="th-social">
                       <a href="https://www.facebook.com/">
