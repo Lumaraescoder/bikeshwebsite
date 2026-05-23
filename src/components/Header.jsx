@@ -14,9 +14,6 @@ function Header() {
       {/* <div className="cursor-follower"></div> */}
 
       <div className="color-scheme-wrap active">
-        <button className="switchIcon">
-          <i className="fa-solid fa-palette"></i>
-        </button>
         <h4 className="color-scheme-wrap-title">
           <i className="far fa-palette"></i>STYLE SWITCHER
         </h4>

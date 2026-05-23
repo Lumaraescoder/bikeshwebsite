@@ -91,7 +91,8 @@ function Tourdetails() {
                             alt={title}
                             style={{
                               width: "100%",
-                              maxHeight: window.innerWidth > 767 ? "500px" : "350px",
+                              maxHeight:
+                                window.innerWidth > 767 ? "500px" : "350px",
                               objectFit: "cover",
                               borderRadius: "8px",
                             }}
@@ -428,11 +429,10 @@ function Tourdetails() {
                 <div className="widget widget_tag_cloud">
                   <h3 className="widget_title">Popular Tags</h3>
                   <div className="tagcloud">
-                    <a href="/blog">Tour</a>
-                    <a href="/blog">Adventure</a>
-                    <a href="/blog">Rent</a> <a href="/blog">Innovate</a>
-                    <a href="/blog">Hotel</a> <a href="/blog">Modern</a>
-                    <a href="/blog">Luxury</a> <a href="/blog">Travel</a>
+                    <a href="/">Tour</a>
+                    <a>Adventure</a>
+                    <a>Modern</a>
+                    <a>Travel</a>
                   </div>
                 </div>
               </aside>

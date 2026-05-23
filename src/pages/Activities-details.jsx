@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Thumbs } from "swiper/modules";
 import { useState } from "react";
@@ -7,8 +7,8 @@ import "swiper/css/effect-fade";
 import "swiper/css/thumbs";
 
 function Activitiesdetails() {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
-   const images = [
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const images = [
     "assets/img/tour/tour_inner_2_1.jpg",
     "assets/img/tour/tour_inner_2_2.jpg",
     "assets/img/tour/tour_inner_2_3.jpg",
@@ -16,12 +16,17 @@ function Activitiesdetails() {
   ];
   return (
     <div>
-      <div className="breadcumb-wrapper"style={{ backgroundImage: "url('/assets/img/bg/breadcumb-bg.jpg')" }}>
+      <div
+        className="breadcumb-wrapper"
+        style={{ backgroundImage: "url('/assets/img/bg/breadcumb-bg.jpg')" }}
+      >
         <div className="container">
           <div className="breadcumb-content">
             <h1 className="breadcumb-title">Activity Single</h1>
             <ul className="breadcumb-menu">
-              <li><a href="home-travel.html">Home</a></li>
+              <li>
+                <a href="home-travel.html">Home</a>
+              </li>
               <li>Activity Single</li>
             </ul>
           </div>
@@ -33,61 +38,61 @@ function Activitiesdetails() {
             <div className="col-xxl-8 col-lg-7">
               <div className="tour-page-single">
                 <div className="slider-area tour-slider1">
-                    <Swiper
-    effect="fade"
-    loop={true}
-    autoplay={{ delay: 3000, disableOnInteraction: false }}
-    thumbs={{ swiper: thumbsSwiper }}
-    modules={[EffectFade, Thumbs, Autoplay]}
-    className="swiper th-slider mb-4"
-  >
-    {[
-      "assets/img/tour/tour_inner_2_1.jpg",
-      "assets/img/tour/tour_inner_2_2.jpg",
-      "assets/img/tour/tour_inner_2_3.jpg",
-      "assets/img/tour/tour_inner_2_4.jpg",
-    ].map((src, index) => (
-      <SwiperSlide key={index}>
-        <div className="tour-slider-img">
-          <img src={src} alt={`Slide ${index + 1}`} />
-        </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
+                  <Swiper
+                    effect="fade"
+                    loop={true}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    thumbs={{ swiper: thumbsSwiper }}
+                    modules={[EffectFade, Thumbs, Autoplay]}
+                    className="swiper th-slider mb-4"
+                  >
+                    {[
+                      "assets/img/tour/tour_inner_2_1.jpg",
+                      "assets/img/tour/tour_inner_2_2.jpg",
+                      "assets/img/tour/tour_inner_2_3.jpg",
+                      "assets/img/tour/tour_inner_2_4.jpg",
+                    ].map((src, index) => (
+                      <SwiperSlide key={index}>
+                        <div className="tour-slider-img">
+                          <img src={src} alt={`Slide ${index + 1}`} />
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
 
-  {/* Thumbnails Swiper */}
-  <Swiper
-    onSwiper={setThumbsSwiper}
-    spaceBetween={10}
-    loop={true}
-    slidesPerView={3}
-    modules={[Thumbs]}
-    breakpoints={{
-      0: { slidesPerView: 2 },
-      576: { slidesPerView: 2 },
-      768: { slidesPerView: 3 },
-      992: { slidesPerView: 3 },
-      1200: { slidesPerView: 3 },
-    }}
-    className="swiper th-slider tour-thumb-slider"
-  >
-    {[
-      "assets/img/tour/tour_inner_2_1.jpg",
-      "assets/img/tour/tour_inner_2_2.jpg",
-      "assets/img/tour/tour_inner_2_3.jpg",
-      "assets/img/tour/tour_inner_2_4.jpg",
-      "assets/img/tour/tour_inner_2_1.jpg",
-      "assets/img/tour/tour_inner_2_2.jpg",
-      "assets/img/tour/tour_inner_2_3.jpg",
-      "assets/img/tour/tour_inner_2_4.jpg",
-    ].map((src, index) => (
-      <SwiperSlide key={index}>
-        <div className="tour-slider-img">
-          <img src={src} alt={`Thumb ${index + 1}`} />
-        </div>
-      </SwiperSlide>
-    ))}
-  </Swiper>
+                  {/* Thumbnails Swiper */}
+                  <Swiper
+                    onSwiper={setThumbsSwiper}
+                    spaceBetween={10}
+                    loop={true}
+                    slidesPerView={3}
+                    modules={[Thumbs]}
+                    breakpoints={{
+                      0: { slidesPerView: 2 },
+                      576: { slidesPerView: 2 },
+                      768: { slidesPerView: 3 },
+                      992: { slidesPerView: 3 },
+                      1200: { slidesPerView: 3 },
+                    }}
+                    className="swiper th-slider tour-thumb-slider"
+                  >
+                    {[
+                      "assets/img/tour/tour_inner_2_1.jpg",
+                      "assets/img/tour/tour_inner_2_2.jpg",
+                      "assets/img/tour/tour_inner_2_3.jpg",
+                      "assets/img/tour/tour_inner_2_4.jpg",
+                      "assets/img/tour/tour_inner_2_1.jpg",
+                      "assets/img/tour/tour_inner_2_2.jpg",
+                      "assets/img/tour/tour_inner_2_3.jpg",
+                      "assets/img/tour/tour_inner_2_4.jpg",
+                    ].map((src, index) => (
+                      <SwiperSlide key={index}>
+                        <div className="tour-slider-img">
+                          <img src={src} alt={`Thumb ${index + 1}`} />
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                   <button
                     data-slider-prev="#tourSlider4"
                     className="slider-arrow style3 slider-prev"
@@ -103,19 +108,25 @@ function Activitiesdetails() {
                 </div>
                 <div className="page-content">
                   <div className="page-meta mb-45">
-                    <a className="page-tag" href="/tour">Featured</a>
-                    <span className="ratting"
-                    ><i className="fa-sharp fa-solid fa-star"></i><span>4.8</span></span>
+                    <a className="page-tag" href="/tour">
+                      Featured
+                    </a>
+                    <span className="ratting">
+                      <i className="fa-sharp fa-solid fa-star"></i>
+                      <span>4.8</span>
+                    </span>
                   </div>
-                  <h2 className="box-title">Explore the Beauty of Maldives Costal</h2>
+                  <h2 className="box-title">
+                    Explore the Beauty of Maldives Costal
+                  </h2>
                   <p className="box-text mb-30">
                     voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore magnam
-                    aliquam quaerat voluptatem. Quis autem vel eum iure
-                    reprehenderit qui in ea voluptate velit esse quam nihil
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                    quia non numquam eius modi tempora incidunt ut labore et
+                    dolore magnam aliquam quaerat voluptatem. Quis autem vel eum
+                    iure reprehenderit qui in ea voluptate velit esse quam nihil
                     molestiae consequatur, vel illum qui dolorem eum fugiat quo
                     voluptas nulla pariatur
                   </p>
@@ -130,9 +141,12 @@ function Activitiesdetails() {
                     <h4 className="box-title">Tour Snapshot</h4>
                     <div className="tour-snap-wrapp">
                       <div className="tour-snap">
-                        <div className="icon"><i className="fa-light fa-clock"></i></div>
+                        <div className="icon">
+                          <i className="fa-light fa-clock"></i>
+                        </div>
                         <div className="content">
-                          <span className="title">Duration:</span> <span>8h</span>
+                          <span className="title">Duration:</span>{" "}
+                          <span>8h</span>
                         </div>
                       </div>
                       <div className="tour-snap">
@@ -140,7 +154,8 @@ function Activitiesdetails() {
                           <img src="assets/img/icon/guide2.svg" alt="" />
                         </div>
                         <div className="content">
-                          <span className="title">Group Size:</span> <span>12</span>
+                          <span className="title">Group Size:</span>{" "}
+                          <span>12</span>
                         </div>
                       </div>
                       <div className="tour-snap">
@@ -158,7 +173,9 @@ function Activitiesdetails() {
                         </div>
                         <div className="content">
                           <span className="title">Free Cancellation</span>
-                          <a href="#" className="line-btn">Learn more</a>
+                          <a href="#" className="line-btn">
+                            Learn more
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -166,21 +183,21 @@ function Activitiesdetails() {
                   <h2 className="box-title">Overview</h2>
                   <p className="box-text mb-50">
                     voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                    numquam eius modi tempora incidunt ut labore et dolore magnam
-                    aliquam quaerat voluptatem. Quis autem vel eum iure
-                    reprehenderit qui in ea voluptate velit esse quam nihil
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+                    quia non numquam eius modi tempora incidunt ut labore et
+                    dolore magnam aliquam quaerat voluptatem. Quis autem vel eum
+                    iure reprehenderit qui in ea voluptate velit esse quam nihil
                     molestiae consequatur, vel illum qui dolorem eum fugiat quo
                     voluptas nulla pariatur.
                   </p>
                   <h2 className="box-title">Highlights</h2>
                   <p className="box-text mb-30">
                     voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci.
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci.
                   </p>
                   <div className="checklist mb-50">
                     <ul>
@@ -204,9 +221,9 @@ function Activitiesdetails() {
                   <h2 className="box-title">Important Information</h2>
                   <p className="blog-text mb-35">
                     voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci.
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci.
                   </p>
                   <div className="activities-checklist mb-50">
                     <div className="checklist style2">
@@ -236,9 +253,9 @@ function Activitiesdetails() {
                   <h2 className="box-title">Included and Excluded</h2>
                   <p className="blog-text mb-35">
                     voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                    architecto beatae vitae dicta sunt explicabo. Dolorem ipsum
-                    quia dolor sit amet, consectetur, adipisci.
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Dolorem
+                    ipsum quia dolor sit amet, consectetur, adipisci.
                   </p>
                   <div className="destination-checklist">
                     <div className="checklist style2 style4">
@@ -291,17 +308,19 @@ function Activitiesdetails() {
                           <h3 className="name">Adam Jhon</h3>
                           <div className="commented-wrapp">
                             <span className="commented-on">20 Jun, 2024</span>
-                            <span className="commented-time">08:56pm </span><span className="comment-review"
-                            ><i className="fa-solid fa-star"></i>
+                            <span className="commented-time">08:56pm </span>
+                            <span className="comment-review">
                               <i className="fa-solid fa-star"></i>
                               <i className="fa-solid fa-star"></i>
                               <i className="fa-solid fa-star"></i>
-                              <i className="fa-solid fa-star"></i></span>
+                              <i className="fa-solid fa-star"></i>
+                              <i className="fa-solid fa-star"></i>
+                            </span>
                           </div>
                           <p className="text">
-                            Credibly pontificate transparent quality vectors with
-                            quality mindshare. Efficiently architect worldwide
-                            strategic theme areas after user.
+                            Credibly pontificate transparent quality vectors
+                            with quality mindshare. Efficiently architect
+                            worldwide strategic theme areas after user.
                           </p>
                           <div className="reply_and_edit">
                             <i className="fa-solid fa-thumbs-up"></i>
@@ -321,13 +340,19 @@ function Activitiesdetails() {
                               <div className="">
                                 <h3 className="name">Maria Willson</h3>
                                 <div className="commented-wrapp">
-                                  <span className="commented-on">23 Jun, 2024</span>
-                                  <span className="commented-time">08:56pm </span><span className="comment-review"
-                                  ><i className="fa-solid fa-star"></i>
+                                  <span className="commented-on">
+                                    23 Jun, 2024
+                                  </span>
+                                  <span className="commented-time">
+                                    08:56pm{" "}
+                                  </span>
+                                  <span className="comment-review">
                                     <i className="fa-solid fa-star"></i>
                                     <i className="fa-solid fa-star"></i>
                                     <i className="fa-solid fa-star"></i>
-                                    <i className="fa-solid fa-star"></i></span>
+                                    <i className="fa-solid fa-star"></i>
+                                    <i className="fa-solid fa-star"></i>
+                                  </span>
                                 </div>
                               </div>
                               <p className="text">
@@ -355,18 +380,20 @@ function Activitiesdetails() {
                             <h3 className="name">Michel Edwards</h3>
                             <div className="commented-wrapp">
                               <span className="commented-on">27 Jun, 2024</span>
-                              <span className="commented-time">08:56pm </span><span className="comment-review"
-                              ><i className="fa-solid fa-star"></i>
+                              <span className="commented-time">08:56pm </span>
+                              <span className="comment-review">
                                 <i className="fa-solid fa-star"></i>
                                 <i className="fa-solid fa-star"></i>
                                 <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i></span>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                              </span>
                             </div>
                           </div>
                           <p className="text">
-                            Credibly pontificate transparent quality vectors with
-                            quality mindshare. Efficiently architect worldwide
-                            strategic theme areas after user.
+                            Credibly pontificate transparent quality vectors
+                            with quality mindshare. Efficiently architect
+                            worldwide strategic theme areas after user.
                           </p>
                           <div className="reply_and_edit">
                             <i className="fa-solid fa-thumbs-up"></i>
@@ -419,16 +446,15 @@ function Activitiesdetails() {
                     </div>
                     <div className="col-12 form-group">
                       <input type="checkbox" id="html" />
-                      <label for="html"
-                      >Save my name, email, and website in this browser for the
-                        next time I comment.</label>
+                      <label for="html">
+                        Save my name, email, and website in this browser for the
+                        next time I comment.
+                      </label>
                     </div>
                     <div className="col-12 form-group mb-0">
                       <button className="th-btn">
-                        Send Message<img
-                          src="assets/img/icon/plane2.svg"
-                          alt=""
-                        />
+                        Send Message
+                        <img src="assets/img/icon/plane2.svg" alt="" />
                       </button>
                     </div>
                   </div>
@@ -440,48 +466,54 @@ function Activitiesdetails() {
                 <div className="widget widget_search">
                   <form className="search-form">
                     <input type="text" placeholder="Search" />
-                    <button type="submit"><i className="far fa-search"></i></button>
+                    <button type="submit">
+                      <i className="far fa-search"></i>
+                    </button>
                   </form>
                 </div>
                 <div className="widget widget_categories">
                   <h3 className="widget_title">Categories</h3>
                   <ul>
                     <li>
-                      <a href="/blog"
-                      ><img src="assets/img/theme-img/map.svg" alt="" />City
-                        Tour</a>
+                      <a href="/blog">
+                        <img src="assets/img/theme-img/map.svg" alt="" />
+                        City Tour
+                      </a>
                       <span>(8)</span>
                     </li>
                     <li>
-                      <a href="/blog"
-                      ><img src="assets/img/theme-img/map.svg" alt="" />Beach
-                        Tours</a>
+                      <a href="/blog">
+                        <img src="assets/img/theme-img/map.svg" alt="" />
+                        Beach Tours
+                      </a>
                       <span>(6)</span>
                     </li>
                     <li>
-                      <a href="/blog"
-                      ><img src="assets/img/theme-img/map.svg" alt="" />Wildlife
-                        Tours</a>
+                      <a href="/blog">
+                        <img src="assets/img/theme-img/map.svg" alt="" />
+                        Wildlife Tours
+                      </a>
                       <span>(2)</span>
                     </li>
                     <li>
-                      <a href="/blog"
-                      ><img src="assets/img/theme-img/map.svg" alt="" />News &
-                        Tips</a>
+                      <a href="/blog">
+                        <img src="assets/img/theme-img/map.svg" alt="" />
+                        News & Tips
+                      </a>
                       <span>(7)</span>
                     </li>
                     <li>
-                      <a href="/blog"
-                      ><img
-                          src="assets/img/theme-img/map.svg"
-                          alt=""
-                        />Adventure Tours</a>
+                      <a href="/blog">
+                        <img src="assets/img/theme-img/map.svg" alt="" />
+                        Adventure Tours
+                      </a>
                       <span>(9)</span>
                     </li>
                     <li>
-                      <a href="/blog"
-                      ><img src="assets/img/theme-img/map.svg" alt="" />Mountain
-                        Tours</a>
+                      <a href="/blog">
+                        <img src="assets/img/theme-img/map.svg" alt="" />
+                        Mountain Tours
+                      </a>
                       <span>(10)</span>
                     </li>
                   </ul>
@@ -493,7 +525,8 @@ function Activitiesdetails() {
                   <div className="info-list">
                     <ul>
                       <li>
-                        <strong>Date </strong><span>sun 15 June - Fri 20 July</span>
+                        <strong>Date </strong>
+                        <span>sun 15 June - Fri 20 July</span>
                       </li>
                       <li>
                         <strong>Number of travelers</strong>
@@ -501,10 +534,13 @@ function Activitiesdetails() {
                       </li>
                     </ul>
                   </div>
-                  <a href="/contact" className="th-btn th-icon">Book Now</a>
-                  <span className="review"
-                  ><i className="fa-light fa-heart"></i> 88% of travelers recommend
-                    this experience</span>
+                  <a href="/contact" className="th-btn th-icon">
+                    Book Now
+                  </a>
+                  <span className="review">
+                    <i className="fa-light fa-heart"></i> 88% of travelers
+                    recommend this experience
+                  </span>
                 </div>
                 <div className="widget widget_tag_cloud">
                   <h3 className="widget_title">Popular Tags</h3>
@@ -518,7 +554,9 @@ function Activitiesdetails() {
                 </div>
                 <div
                   className="widget widget_offer"
-                   style={{ backgroundImage: "url('/assets/img/bg/widget_bg_1.jpg')" }}
+                  style={{
+                    backgroundImage: "url('/assets/img/bg/widget_bg_1.jpg')",
+                  }}
                 >
                   <div className="offer-banner">
                     <div className="offer">
@@ -530,11 +568,13 @@ function Activitiesdetails() {
                       </div>
                       <div className="offer">
                         <h6 className="offer-title">You Get Online support</h6>
-                        <a className="offter-num" href="%2b256214203215.html"
-                        >+256 214 203 215</a>
+                        <a className="offter-num" href="%2b256214203215.html">
+                          +256 214 203 215
+                        </a>
                       </div>
-                      <a href="/contact" className="th-btn style2 th-icon"
-                      >Read More</a>
+                      <a href="/contact" className="th-btn style2 th-icon">
+                        Read More
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -544,7 +584,7 @@ function Activitiesdetails() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default Activitiesdetails
+export default Activitiesdetails;

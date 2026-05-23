@@ -12,10 +12,8 @@ export const destinations = [
   rating: 4.9,
   reviews: 128,
   location: 'Lisboa, Portugal',
-  visa: 'Espaço Schengen',
   language: 'Português, Inglês',
   currency: 'Euro (€)',
-  bestTime: 'Todo o ano (evite calor de Agosto)',
   highlights: [
    'Lisbon Cathedral (Sé de Lisboa)',
    'National Pantheon',
@@ -43,7 +41,7 @@ export const destinations = [
   rating: 4.8,
   reviews: 95,
   location: 'Lisboa, Portugal',
-  visa: 'Espaço Schengen',
+
   language: 'Português, Inglês',
   currency: 'Euro (€)',
   bestTime: 'Primavera/Outono (evite multidões de verão)',
@@ -74,7 +72,6 @@ export const destinations = [
   rating: 4.7,
   reviews: 112,
   location: 'Lisboa, Portugal',
-  visa: 'Espaço Schengen',
   language: 'Português, Inglês',
   currency: 'Euro (€)',
   bestTime: 'Final da tarde (foco na noite)',
@@ -105,7 +102,7 @@ export const destinations = [
   rating: 4.8,
   reviews: 189,
   location: 'Lisboa, Portugal',
-  visa: 'Espaço Schengen',
+
   language: 'Português, Inglês',
   currency: 'Euro (€)',
   bestTime: 'Spring/Autumn',
@@ -137,7 +134,7 @@ export const destinations = [
   rating: 4.8,
   reviews: 156,
   location: 'Lisboa, Portugal',
-  visa: 'Espaço Schengen',
+
   language: 'Português, Inglês',
   currency: 'Euro (€)',
   bestTime: 'Sunset hours',
@@ -169,7 +166,7 @@ export const destinations = [
   rating: 4.8,
   reviews: 98,
   location: 'Lisboa, Portugal',
-  visa: 'Espaço Schengen',
+
   language: 'Português, Inglês',
   currency: 'Euro (€)',
   bestTime: 'November - January',
