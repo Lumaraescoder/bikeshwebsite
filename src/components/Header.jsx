@@ -56,16 +56,7 @@ function Header() {
           <i className="fa fa-shopping-cart me-2"></i> Purchase
         </a>
       </div>
-      <div id="preloader" className="preloader">
-        <div className="preloader-inner">
-          <img src="assets/img/logonovapreloader.jpg" alt="" />
-        </div>
-        <div id="loader" className="th-preloader">
-          <div className="animation-preloader">
-            <div className="txt-loading"></div>
-          </div>
-        </div>
-      </div>
+
       <div
         className={`sidemenu-wrapper sidemenu-info ${sideOpen ? "open show" : ""}`}
       >
