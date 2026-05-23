@@ -57,6 +57,7 @@ function Header() {
         </a>
       </div>
 
+      {/* Preloader removed */}
       <div
         className={`sidemenu-wrapper sidemenu-info ${sideOpen ? "open show" : ""}`}
       >

@@ -157,12 +157,13 @@ function Home() {
               </div>
             </div>
           </div>
+
           <div className="row gy-4 gx-4 justify-content-center">
             {[
               {
                 name: "Alfama Old Town Tour",
                 img: "assets/img/photosoftheclientes/clients.jpeg",
-                desc: "Explore the heart of Lisbon's oldest district, winding alleys, Fado music, and the stunning Panteão Nacional. Perfect for history lovers and first-time visitors.",
+                desc: "Explore Alfama’s historic streets, Fado culture, and viewpoints.",
                 reviews: "4.9 (128 reviews)",
                 duration: "1h",
                 price: "From €30",
@@ -171,7 +172,7 @@ function Home() {
               {
                 name: "Chiado & Bairro Alto Tour",
                 img: "assets/img/photosoftheclientes/clinets2.jpeg",
-                desc: "Discover Lisbon's bohemian side: vibrant streets, historic cafés, street art, and panoramic viewpoints. Ideal for those who love culture and nightlife.",
+                desc: "Discover nightlife, cafés, street art, and scenic views.",
                 reviews: "4.9 (243 reviews)",
                 duration: "1h",
                 price: "From €30",
@@ -180,7 +181,7 @@ function Home() {
               {
                 name: "Belém Discovery Tour",
                 img: "assets/img/photosoftheclientes/calhambeque.jpeg",
-                desc: "Visit the iconic Belém Tower, Jerónimos Monastery, and taste the famous Pastéis de Belém. A must for foodies and history buffs.",
+                desc: "Visit Belém Tower, Jerónimos Monastery, and taste Pastéis.",
                 reviews: "4.9 (312 reviews)",
                 duration: "2h",
                 price: "From €30",
@@ -189,7 +190,7 @@ function Home() {
               {
                 name: "Lisbon Full Day Experience",
                 img: "assets/img/photosoftheclientes/capa.jpeg",
-                desc: "See it all! From Alfama to Belém, viewpoints, hidden gems, and local cuisine. The ultimate tuk tuk adventure for explorers.",
+                desc: "A complete Lisbon adventure with landmarks and local food.",
                 reviews: "4.8 (189 reviews)",
                 duration: "6h",
                 price: "From €30",
@@ -198,7 +199,7 @@ function Home() {
               {
                 name: "Lisbon Viewpoints Tour",
                 img: "assets/img/photosoftheclientes/clinetsfoto.jpeg",
-                desc: "Marvel at the best panoramic views of Lisbon from its famous miradouros. Perfect for photographers and romantics.",
+                desc: "Enjoy Lisbon’s best panoramic viewpoints and photo spots.",
                 reviews: "4.8 (156 reviews)",
                 duration: "2h",
                 price: "From €30",
@@ -207,7 +208,7 @@ function Home() {
               {
                 name: "Christmas Lights Tour",
                 img: "assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg",
-                desc: "Experience the magic of Lisbon's festive illuminations and holiday spirit from the comfort of a tuk tuk. Seasonal (Nov-Jan).",
+                desc: "Experience Lisbon’s magical Christmas lights and atmosphere.",
                 reviews: "4.8 (98 reviews)",
                 duration: "2h",
                 price: "From €30",
@@ -241,15 +242,32 @@ function Home() {
                       }}
                     />
                   </div>
+
                   <div className="tour-content">
                     <h3 className="box-title">{tour.name}</h3>
+
                     <div>Lisbon, Portugal</div>
-                    <div>{tour.desc}</div>
+
+                    <div
+                      style={{
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                        minHeight: "48px",
+                      }}
+                    >
+                      {tour.desc}
+                    </div>
+
                     <div style={{ color: "#f7b731", fontWeight: 600 }}>
                       {tour.reviews}
                     </div>
+
                     <div>Duration: {tour.duration}</div>
+
                     <div style={{ fontWeight: 700 }}>{tour.price}</div>
+
                     <button
                       className="th-btn style4 th-icon"
                       style={{
@@ -331,7 +349,7 @@ function Home() {
                   },
                   {
                     name: "John & Emma",
-                    image: "assets/img/photosoftheclientes/calhambeque.jpeg",
+                    image: "assets/img/photosoftheclientes/indianochato.jpeg",
                     role: "USA",
                     text: "The Christmas Lights tour was pure magic. Lisbon illuminated from a decorated tuk-tuk is something we'll never forget. Already planning to come back!",
                   },
@@ -416,9 +434,9 @@ function Home() {
               "calhambeque.jpeg",
               "clients.jpeg",
               "0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg",
-              "calhambeque2.jpeg",
+              "maisuma.jpeg",
               "clinets2.jpeg",
-              "clientspanteao alfama.jpeg",
+              "indnano.jpeg",
             ].map((img) => (
               <div className="col-md-6 col-lg-2" key={img}>
                 <div className="gallery-card">
@@ -439,7 +457,7 @@ function Home() {
                           width: "100%",
                           aspectRatio: "1/1",
                           height: "auto",
-                          maxHeight: "180px",
+                          maxHeight: "300px",
                           objectFit: "cover",
                           borderRadius: "8px",
                           display: "block",

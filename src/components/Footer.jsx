@@ -19,7 +19,7 @@ function Footer() {
                     <div className="about-logo">
                       <a href="/">
                         <img
-                          src="assets/img/logonovapreloader.jpg"
+                          src="assets/img/footer.png"
                           alt="Fancy Tuk Tuk"
                           style={{
                             maxWidth: "180px",
