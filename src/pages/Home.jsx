@@ -79,6 +79,7 @@ function Home() {
           <img
             src="assets/img/photosoftheclientes/capa.png"
             alt="Lisbon Tuk Tuk Cover"
+            fetchPriority="high"
             style={{
               width: "100%",
               height: "60vh",
@@ -230,6 +231,8 @@ function Home() {
                     <img
                       src={tour.img}
                       alt={tour.name}
+                      loading="lazy"
+                      decoding="async"
                       style={{
                         width: "100%",
                         height: 220,
@@ -350,7 +353,12 @@ function Home() {
                       <div className="testi-card_wrapper">
                         <div className="testi-card_profile">
                           <div className="testi-card_avater">
-                            <img src={testimonial.image} alt="testimonial" />
+                            <img
+                              src={testimonial.image}
+                              alt="testimonial"
+                              loading="lazy"
+                              decoding="async"
+                            />
                           </div>
                           <div className="media-body">
                             <h3 className="box-title">{testimonial.name}</h3>
@@ -425,6 +433,8 @@ function Home() {
                       <img
                         src={`assets/img/photosoftheclientes/${img}`}
                         alt="gallery image"
+                        loading="lazy"
+                        decoding="async"
                         style={{
                           width: "100%",
                           aspectRatio: "1/1",
