@@ -12,10 +12,7 @@ function Header() {
   return (
     <div>
       {/* <div className="cursor-follower"></div> */}
-      <div className="slider-drag-cursor">
-        <i className="fas fa-angle-left me-2"></i> DRAG
-        <i className="fas fa-angle-right ms-2"></i>
-      </div>
+
       <div className="color-scheme-wrap active">
         <button className="switchIcon">
           <i className="fa-solid fa-palette"></i>
@@ -236,7 +233,9 @@ function Header() {
             <i className="fal fa-times"></i>
           </button>
           <div className="mobile-logo">
-            <a href="/" style={{ color: "#fff" }}>Fancy Tuk Tuk</a>
+            <a href="/" style={{ color: "#fff" }}>
+              Fancy Tuk Tuk
+            </a>
           </div>
           <div className="th-mobile-menu">
             <ul>
@@ -261,7 +260,11 @@ function Header() {
                 <a
                   href="#"
                   aria-hidden="true"
-                  style={{ visibility: "hidden", display: "inline-block", width: "80px" }}
+                  style={{
+                    visibility: "hidden",
+                    display: "inline-block",
+                    width: "80px",
+                  }}
                 >
                   Spacer
                 </a>
@@ -270,7 +273,11 @@ function Header() {
                 <a
                   href="#"
                   aria-hidden="true"
-                  style={{ visibility: "hidden", display: "inline-block", width: "80px" }}
+                  style={{
+                    visibility: "hidden",
+                    display: "inline-block",
+                    width: "80px",
+                  }}
                 >
                   Spacer
                 </a>
@@ -286,7 +293,9 @@ function Header() {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto">
                   <div className="header-logo">
-                    <a href="/" style={{ color: "#fff" }}>Fancy Tuk Tuk</a>
+                    <a href="/" style={{ color: "#fff" }}>
+                      Fancy Tuk Tuk
+                    </a>
                   </div>
                 </div>
                 <div className="col-auto me-xl-auto">
@@ -313,7 +322,11 @@ function Header() {
                         <a
                           href="#"
                           aria-hidden="true"
-                          style={{ visibility: "hidden", display: "inline-block", width: "80px" }}
+                          style={{
+                            visibility: "hidden",
+                            display: "inline-block",
+                            width: "80px",
+                          }}
                         >
                           Spacer
                         </a>
@@ -344,7 +357,6 @@ function Header() {
           </div>
         </div>
       </header>
-
     </div>
   );
 }
