@@ -368,6 +368,9 @@ function Tourdetails() {
                               </div>
                               <div className="col-md-6">
                                 <div className="form-group">
+                                  <label style={{ fontSize: "14px" }}>
+                                    Pick up
+                                  </label>
                                   <input
                                     type="text"
                                     name="pickup"
