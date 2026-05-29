@@ -25,9 +25,10 @@ export const destinations = [
    'Traditional Azulejos'
   ],
   gallery: [
-   'assets/img/photosoftheclientes/capa.jpeg',
+   'assets/img/photosoftheclientes/maisuma.jpeg',
    'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
-   'assets/img/photosoftheclientes/clients.jpeg'
+   'assets/img/photosoftheclientes/clinetsfoto.jpeg',
+   'assets/img/photosoftheclientes/clinets2.jpeg'
   ]
  },
  {
@@ -56,9 +57,10 @@ export const destinations = [
    'Portuguese Maritime History'
   ],
   gallery: [
-   'assets/img/photosoftheclientes/calhambeque.jpeg',
-   'assets/img/photosoftheclientes/clientspanteao alfama.jpeg',
-   'assets/img/photosoftheclientes/capa.jpeg'
+   'assets/img/photosoftheclientes/maisuma.jpeg',
+   'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
+   'assets/img/photosoftheclientes/clinetsfoto.jpeg',
+   'assets/img/photosoftheclientes/clinets2.jpeg'
   ]
  },
  {
@@ -87,9 +89,10 @@ export const destinations = [
    'Lisbon Nightlife Area'
   ],
   gallery: [
+   'assets/img/photosoftheclientes/maisuma.jpeg',
    'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
-   'assets/img/photosoftheclientes/clients.jpeg',
-   'assets/img/photosoftheclientes/capa.jpeg'
+   'assets/img/photosoftheclientes/clinetsfoto.jpeg',
+   'assets/img/photosoftheclientes/clinets2.jpeg'
   ]
  },
  {
@@ -118,10 +121,10 @@ export const destinations = [
    'Full Private Guided Tour'
   ],
   gallery: [
+   'assets/img/photosoftheclientes/maisuma.jpeg',
+   'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
    'assets/img/photosoftheclientes/clinetsfoto.jpeg',
-   'assets/img/photosoftheclientes/capa.jpeg',
-   'assets/img/photosoftheclientes/calhambeque.jpeg',
-   'assets/img/photosoftheclientes/clients.jpeg'
+   'assets/img/photosoftheclientes/clinets2.jpeg'
   ]
  },
  {
@@ -150,9 +153,9 @@ export const destinations = [
    'Sunset Experience'
   ],
   gallery: [
+   'assets/img/photosoftheclientes/maisuma.jpeg',
+   'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
    'assets/img/photosoftheclientes/clinetsfoto.jpeg',
-   'assets/img/photosoftheclientes/capa.jpeg',
-   'assets/img/photosoftheclientes/clientspanteao alfama.jpeg',
    'assets/img/photosoftheclientes/clinets2.jpeg'
   ]
  },
@@ -182,10 +185,10 @@ export const destinations = [
    'Private Tuk-Tuk Ride'
   ],
   gallery: [
+   'assets/img/photosoftheclientes/maisuma.jpeg',
+   'assets/img/photosoftheclientes/0389dc11-52a8-4df9-93ea-99a34ae2a493.jpeg',
    'assets/img/photosoftheclientes/clinetsfoto.jpeg',
-   'assets/img/photosoftheclientes/capa.jpeg',
-   'assets/img/photosoftheclientes/calhambeque.jpeg',
-   'assets/img/photosoftheclientes/clients.jpeg'
+   'assets/img/photosoftheclientes/clinets2.jpeg'
   ]
  }
 ];
