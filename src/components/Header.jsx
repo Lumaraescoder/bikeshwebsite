@@ -332,7 +332,12 @@ function Header() {
                 </div>
                 <div className="col-auto d-none d-xl-block">
                   <div className="header-button">
-                    <a href="/contact" className="th-btn style3 th-icon">
+                    <a
+                      href="https://wa.me/351920414513"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="th-btn style3 th-icon"
+                    >
                       Contact
                     </a>
                   </div>

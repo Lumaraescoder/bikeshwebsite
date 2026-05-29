@@ -83,7 +83,6 @@ function Destinationdetails() {
                     <div className="checklist style2">
                       <ul>
                         <li>Destination</li>
-                        <li>Visa Requirements</li>
                         <li>Language</li>
                         <li>Currency Used</li>
                         <li>Best Time</li>
