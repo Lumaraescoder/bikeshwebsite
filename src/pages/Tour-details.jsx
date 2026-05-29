@@ -253,7 +253,9 @@ function Tourdetails() {
                               // basic validation: ensure required booking fields are present
                               if (!people || !hours || !startTime) {
                                 e.preventDefault();
-                                alert("Please select number of people, hours and a start time before submitting.");
+                                alert(
+                                  "Please select number of people, hours and a start time before submitting.",
+                                );
                               }
                             }}
                           >
@@ -310,7 +312,9 @@ function Tourdetails() {
                                     className="form-control"
                                     required
                                     value={people}
-                                    onChange={(e) => setPeople(Number(e.target.value))}
+                                    onChange={(e) =>
+                                      setPeople(Number(e.target.value))
+                                    }
                                   >
                                     <option value={1}>1 Passenger</option>
                                     <option value={2}>2 Passengers</option>
@@ -324,13 +328,17 @@ function Tourdetails() {
                               </div>
                               <div className="col-md-6">
                                 <div className="form-group">
-                                  <label style={{ fontSize: "14px" }}>Hours</label>
+                                  <label style={{ fontSize: "14px" }}>
+                                    Hours
+                                  </label>
                                   <select
                                     name="hours"
                                     className="form-control"
                                     required
                                     value={hours}
-                                    onChange={(e) => setHours(Number(e.target.value))}
+                                    onChange={(e) =>
+                                      setHours(Number(e.target.value))
+                                    }
                                   >
                                     <option value={1}>1 hour</option>
                                     <option value={2}>2 hours</option>
@@ -343,14 +351,18 @@ function Tourdetails() {
                               </div>
                               <div className="col-md-6">
                                 <div className="form-group">
-                                  <label style={{ fontSize: "14px" }}>Start Time</label>
+                                  <label style={{ fontSize: "14px" }}>
+                                    Start Time
+                                  </label>
                                   <input
                                     type="time"
                                     name="start_time"
                                     className="form-control"
                                     required
                                     value={startTime}
-                                    onChange={(e) => setStartTime(e.target.value)}
+                                    onChange={(e) =>
+                                      setStartTime(e.target.value)
+                                    }
                                   />
                                 </div>
                               </div>
@@ -380,10 +392,16 @@ function Tourdetails() {
                                   name="_subject"
                                   value={`New Tuk Tuk Booking — ${title}`}
                                 />
-                                <input type="hidden" name="total_price" value={`${totalPrice} €`} />
+                                <input
+                                  type="hidden"
+                                  name="total_price"
+                                  value={`${totalPrice} €`}
+                                />
 
                                 <div style={{ marginBottom: 12 }}>
-                                  <strong>Total:</strong> {totalPrice} € • <strong>Duration:</strong> {hours}h • <strong>Time:</strong> {startTime || "—"}
+                                  <strong>Total:</strong> {totalPrice} € •{" "}
+                                  <strong>Duration:</strong> {hours}h •{" "}
+                                  <strong>Time:</strong> {startTime || "—"}
                                 </div>
 
                                 <button type="submit" className="th-btn w-100">
