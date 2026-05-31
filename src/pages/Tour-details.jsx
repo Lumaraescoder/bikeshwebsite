@@ -7,6 +7,20 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { destinations } from "../data/destinations.js";
 
+const PRICE_TABLE = {
+  1: { 1: 30, 2: 60, 3: 90, 4: 120, 5: 150, 6: 180 },
+  2: { 1: 60, 2: 120, 3: 180, 4: 240, 5: 300, 6: 360 },
+  3: { 1: 90, 2: 180, 3: 270, 4: 360, 5: 450, 6: 540 },
+  4: { 1: 120, 2: 240, 3: 360, 4: 480, 5: 500, 6: 600 },
+  5: { 1: 150, 2: 300, 3: 450, 4: 500, 5: 600, 6: 700 },
+  6: { 1: 180, 2: 300, 3: 500, 4: 600, 5: 700, 6: 800 },
+  7: { 1: 200, 2: 350, 3: 500, 4: 600, 5: 700, 6: 800 },
+};
+
+function getBookingPrice(people, hours) {
+  return PRICE_TABLE[people]?.[hours] ?? 0;
+}
+
 function Tourdetails() {
   const { slug } = useParams();
   const [destination, setDestination] = useState(null);
@@ -14,8 +28,7 @@ function Tourdetails() {
   const [people, setPeople] = useState(1);
   const [hours, setHours] = useState(1);
   const [startTime, setStartTime] = useState("");
-  const RATE_PER_PERSON_PER_HOUR = 30; // €30 per person per hour
-  const totalPrice = RATE_PER_PERSON_PER_HOUR * Number(people) * Number(hours);
+  const totalPrice = getBookingPrice(people, hours);
 
   useEffect(() => {
     const found = destinations.find((d) => d.slug === slug);
