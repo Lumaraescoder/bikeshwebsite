@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Activitiesdetails from "./pages/Activities-details";
@@ -27,7 +27,7 @@ function App() {
     <div>
       <Header />
       <WhatsAppFloating />
-      <BrowserRouter>
+      <Router>
         <Cursorfollower />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -53,7 +53,7 @@ function App() {
           <Route path="/tour" element={<Tour />} />
           <Route path="/tour-guider-details" element={<Tourguiderdetails />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
       {/* Removed extra margin above footer as requested */}
       <Footer />
     </div>
