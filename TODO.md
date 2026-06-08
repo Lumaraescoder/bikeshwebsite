@@ -1,5 +1,5 @@
 # TODO
 
-- [ ] Remove preloader markup (Header component)
-- [ ] Remove preloader CSS/JS behavior if any (search for #preloader / .preloader / th-preloader)
-- [ ] Build/test the app (npm run build / npm run dev)
+- [ ] Create route `/contact-form` that renders the existing Contact component
+- [ ] Update navigation link(s) that are meant to go to contact so they use `/contact-form` (if required)
+- [ ] Verify in browser that clicking “Contact” changes route correctly under HashRouter (URL becomes `#/contact-form` or `#/contact` depending on final choice)
