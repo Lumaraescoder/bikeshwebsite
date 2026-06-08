@@ -198,7 +198,12 @@ function ContactForm() {
         <div className="col-md-6">
           <div className="form-group">
             <label style={{ fontSize: "14px" }}>Pick up</label>
-            <input type="text" name="pickup" className="form-control" placeholder="Pick up" />
+            <input
+              type="text"
+              name="pickup"
+              className="form-control"
+              placeholder="Pick up"
+            />
           </div>
         </div>
 
