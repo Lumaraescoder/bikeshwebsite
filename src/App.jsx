@@ -24,39 +24,36 @@ import "./whatsapp-float.css";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
+      <Cursorfollower />
       <Header />
       <WhatsAppFloating />
-      <BrowserRouter>
-        <Cursorfollower />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/activities-details" element={<Activitiesdetails />} />
-          <Route path="/activity" element={<Activity />} />
-          <Route path="/blog-details" element={<Blogdetails />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/service-details" element={<Servicedetails />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/destination" element={<Destination />} />
-          <Route
-            path="/destination-details/:slug"
-            element={<Destinationdetails />}
-          />
-          <Route
-            path="/tour-details"
-            element={<Navigate to="/destination" replace />}
-          />
-          <Route path="/tour-details/:slug" element={<Tourdetails />} />
-          <Route path="/tour" element={<Tour />} />
-          <Route path="/tour-guider-details" element={<Tourguiderdetails />} />
-        </Routes>
-      </BrowserRouter>
-      {/* Removed extra margin above footer as requested */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/activities-details" element={<Activitiesdetails />} />
+        <Route path="/activity" element={<Activity />} />
+        <Route path="/blog-details" element={<Blogdetails />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/service-details" element={<Servicedetails />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/destination" element={<Destination />} />
+        <Route
+          path="/destination-details/:slug"
+          element={<Destinationdetails />}
+        />
+        <Route
+          path="/tour-details"
+          element={<Navigate to="/destination" replace />}
+        />
+        <Route path="/tour-details/:slug" element={<Tourdetails />} />
+        <Route path="/tour" element={<Tour />} />
+        <Route path="/tour-guider-details" element={<Tourguiderdetails />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
