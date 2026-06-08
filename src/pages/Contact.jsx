@@ -60,20 +60,11 @@ function Contact() {
       </div>
       <div
         className="space-extra2-top space-extra2-bottom"
-        style={{ backgroundImage: "url('/assets/img/bg/video_bg_1.jpg')" }}
+        // style={{ backgroundImage: "url('/assets/img/bg/video_bg_1.jpg')" }}
       >
         <div className="container">
           <div className="row flex-row-reverse justify-content-center align-items-center">
-            <div className="col-lg-6">
-              <div className="video-box1">
-                <a
-                  href="https://www.youtube.com/watch?v=cQfIUPw72Dk"
-                  className="play-btn style2 popup-video"
-                >
-                  <i className="fa-sharp fa-solid fa-play"></i>
-                </a>
-              </div>
-            </div>
+            <div className="col-lg-6"></div>
             <div className="col-lg-6">
               <div>
                 <ContactForm />
