@@ -139,6 +139,7 @@ function ContactForm() {
 
         <div className="col-md-6">
           <div className="form-group">
+            <label style={{ fontSize: "14px" }}>Date</label>
             <input type="date" name="date" className="form-control" />
           </div>
         </div>
