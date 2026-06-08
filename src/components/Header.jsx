@@ -223,7 +223,16 @@ function Header() {
           </button>
           <div className="mobile-logo">
             <a href="/" style={{ color: "#fff" }}>
-              Fancy Tuk Tuk
+              <img
+                src="assets/img/navbar.png"
+                alt="Fancy Tuk Tuk"
+                style={{
+                  maxWidth: 180,
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                }}
+              />
             </a>
           </div>
           <div className="th-mobile-menu">
@@ -283,7 +292,16 @@ function Header() {
                 <div className="col-auto">
                   <div className="header-logo">
                     <a href="/" style={{ color: "#fff" }}>
-                      Fancy Tuk Tuk
+                      <img
+                        src="assets/img/navbar.png"
+                        alt="Fancy Tuk Tuk"
+                        style={{
+                          maxWidth: 220,
+                          width: "100%",
+                          height: "auto",
+                          display: "block",
+                        }}
+                      />
                     </a>
                   </div>
                 </div>
