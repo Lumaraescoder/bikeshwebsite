@@ -151,12 +151,12 @@ function Header() {
                 <div className="details">
                   <p>
                     <a href="tel:+01234567890" className="info-box_link">
-                      +01 234 567 890
+                      +351 920 414 513
                     </a>
                   </p>
                   <p>
                     <a href="tel:+09876543210" className="info-box_link">
-                      +09 876 543 210
+                      +351 920 414 513
                     </a>
                   </p>
                 </div>
@@ -243,7 +243,7 @@ function Header() {
                 <a href="/#testi-sec">Testimonials</a>
               </li>
               <li>
-                <a href="/#contact">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
               <li>
                 <a
@@ -305,7 +305,7 @@ function Header() {
                         <a href="/#testi-sec">Testimonials</a>
                       </li>
                       <li>
-                        <a href="/#contact">Contact</a>
+                        <a href="/contact">Contact</a>
                       </li>
                       <li>
                         <a
@@ -333,7 +333,7 @@ function Header() {
                 <div className="col-auto d-none d-xl-block">
                   <div className="header-button">
                     <a
-                      href="https://wa.me/351920414513"
+                      href="/contact"
                       target="_blank"
                       rel="noreferrer"
                       className="th-btn style3 th-icon"
